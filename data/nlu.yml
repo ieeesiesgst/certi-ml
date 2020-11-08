@@ -86,3 +86,25 @@ nlu:
     - am I talking to a human?
     - r u man?
     - are u a bot?
+- intent: about_ieee
+  examples: |
+    - what is ieee?
+    - what is ieee siesgst?
+    - tell me about ieee sies gst
+    - about ieee
+    - about ieee siesgst
+    - give some info about ieee siesgst
+    - what is ieee siesgst about?
+    - more info about ieee
+    - provide me the details of ieee siesgst
+- intent: about_program
+  examples: |
+    - what is this platform for
+    - what is this program about?
+    - program information
+    - some program info
+    - details about the program
+    - why this program?
+    - why was this platform created
+    - why did you make this platform
+    - about this program

@@ -28,3 +28,13 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: about ieee
+  steps:
+  - intent: about_ieee
+  - action: utter_about_ieee
+
+- story: about program
+  steps:
+  - intent: about_program
+  - action: utter_about_program

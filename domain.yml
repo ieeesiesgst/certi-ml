@@ -1,6 +1,7 @@
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 intents:
 - greet
 - goodbye
@@ -11,22 +12,32 @@ intents:
 - bot_challenge
 - about_ieee
 - about_program
+
+
 responses:
+
   utter_greet:
   - text: Hey! How are you?
+
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
+
   utter_did_that_help:
   - text: Did that help you?
+  
   utter_happy:
   - text: Great, carry on!
+  
   utter_goodbye:
   - text: Bye
+  
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  
   utter_about_ieee:
   - text: "IEEE is the oldest Student body of SIES GST. It is an active body in organising all extra-curricular activities in the college. This acedamic year, IEEE SIESGST saw a growth like never before within participation for most of it's events having increased by leaps and bounds.\nCheckout our Social Media Handles:\nhttps://ieeesiesgst.co.in/ \nhttps://www.linkedin.com/company/ieee-gst/ \nhttps://www.instagram.com/ieeesiesgst/ \nhttps://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw \nhttps://www.facebook.com/ieeesiesgstofficial/"
+  
   utter_about_program:
   - text: "It is an initiative taken by IEEE SIESGST to provide some of the most beneficial and trending technical courses in this platform to help you upskill with latest technologies."
     

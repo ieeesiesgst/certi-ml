@@ -1,5 +1,6 @@
 version: "2.0"
 nlu:
+
 - intent: greet
   examples: |
     - hey
@@ -16,6 +17,8 @@ nlu:
     - goodevening
     - good afternoon
     - hii
+
+
 - intent: goodbye
   examples: |
     - good afternoon
@@ -29,6 +32,8 @@ nlu:
     - see you around
     - bye bye
     - see you later
+
+
 - intent: affirm
   examples: |
     - yes
@@ -37,6 +42,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+
+
 - intent: deny
   examples: |
     - no
@@ -46,6 +53,8 @@ nlu:
     - don't like that
     - no way
     - not really
+
+
 - intent: mood_great
   examples: |
     - perfect
@@ -62,6 +71,8 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
+
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -78,6 +89,8 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -86,6 +99,8 @@ nlu:
     - am I talking to a human?
     - r u man?
     - are u a bot?
+
+
 - intent: about_ieee
   examples: |
     - what is ieee?
@@ -97,6 +112,8 @@ nlu:
     - what is ieee siesgst about?
     - more info about ieee
     - provide me the details of ieee siesgst
+
+    
 - intent: about_program
   examples: |
     - what is this platform for

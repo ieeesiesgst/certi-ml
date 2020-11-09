@@ -17,7 +17,8 @@ intents:
 
 responses:
   utter_greet:
-  - text: Hey! How are you?
+  - text: "Hola!\nMy name is Desi..\nHow can I help you?"
+  - text: "Heyy!\nHow may I help you?"
   
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
@@ -28,10 +29,18 @@ responses:
   
   utter_happy:
   - text: "Great, carry on!"
+  - text: "Nice!"
+  - text: "Yeah.."
   
+  utter_thanks:
+  - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
+  - text: "Hope you liked our service!\nHappy Learning :-)"
+
   utter_goodbye:
   - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
+  - text: "Hope you liked our service!\nHappy Learning :-)"
   - text: "Bye"
+  - text: "Byee!\nSee you."
   
   utter_iamabot:
   - text: "I'm an IEEE SIESGST conversational bot."
@@ -45,8 +54,8 @@ responses:
       \ all extra-curricular activities in the college. This acedamic year, IEEE SIESGST\
       \ saw a growth like never before within participation for most of it's events\
       \ having increased by leaps and bounds.\nCheckout our Social Media Handles:\n\
-      https://ieeesiesgst.co.in/ \nhttps://www.linkedin.com/company/ieee-gst/ \nhttps://www.instagram.com/ieeesiesgst/\
-      \ \nhttps://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw \nhttps://www.facebook.com/ieeesiesgstofficial/"
+      \ - [Our Website](https://ieeesiesgst.co.in/)\n- [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n- [Instagram](https://www.instagram.com/ieeesiesgst/)\n \
+      \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n- [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"
   
   utter_about_program:
   - text: "It is an initiative taken by IEEE SIESGST to provide some of the most beneficial

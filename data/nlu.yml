@@ -42,6 +42,12 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - yea
+    - yeah
+    - okay
+    - ok
+    - k
+    - thanks
 
 
 - intent: deny
@@ -53,6 +59,10 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nope
+    - naah
+    - no need
+
 
 
 - intent: mood_great
@@ -99,6 +109,7 @@ nlu:
     - am I talking to a human?
     - r u man?
     - are u a bot?
+    - who are you?
 
 
 - intent: about_ieee
@@ -112,6 +123,8 @@ nlu:
     - what is ieee siesgst about?
     - more info about ieee
     - provide me the details of ieee siesgst
+    - can you tell me more about ieee
+    - provide information about ieee
 
     
 - intent: about_program
@@ -122,9 +135,11 @@ nlu:
     - some program info
     - details about the program
     - why this program?
-    - why was this platform created
-    - why did you make this platform
+    - why was this platform created?
+    - why did you make this platform?
     - about this program
+    - what is the motto of this program?
+    - why should join this program?
 
 
 - intent: certification
@@ -136,6 +151,8 @@ nlu:
     - how and when will i receive my certificates?
     - will i get certi also?
     - is there any certi for the course
+    - is there any eligibility for receiving certificates?
+    - certificates?
 
 
 - intent: cost
@@ -146,3 +163,5 @@ nlu:
     - what is the registration cost?
     - how much i have to pay for a course?
     - what is the cost of certificate
+    - do i need to pay to enroll in the course?
+    - will i receive my certificates only after the payment?

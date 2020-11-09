@@ -29,12 +29,28 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: about ieee 1
+- story: about ieee basic
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: about_ieee
   - action: utter_about_ieee
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
 
-- story: about ieee 2
+- story: about program basic
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_program
+  - action: utter_about_program
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: about ieee and program sad
   steps:
   - intent: greet
   - action: utter_greet
@@ -42,20 +58,61 @@ stories:
   - action: utter_about_ieee
   - intent: about_program
   - action: utter_about_program
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
 
-- story: about program
+
+- story: about ieee and program happy
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: about_program
-  - action: utter_about_program
   - intent: about_ieee
   - action: utter_about_ieee
+  - intent: about_program
+  - action: utter_about_program
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: about certi and program happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: certification
+  - action: utter_certification
+  - intent: about_program
+  - action: utter_about_program
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+
+- story: about ieee, program n certi 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_ieee
+  - action: utter_about_ieee
+  - intent: about_program
+  - action: utter_about_program
+  - intent: certification
+  - action: utter_certification
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_thanks
+
 
 - story: certificates
   steps:
+  - intent: greet
+  - action: utter_greet
   - intent: certification
   - action: utter_certification
+  - intent: affirm
+  - action: utter_happy
+
 
 - story: Story from Conversation fr test
   steps:

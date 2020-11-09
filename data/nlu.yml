@@ -125,3 +125,24 @@ nlu:
     - why was this platform created
     - why did you make this platform
     - about this program
+
+
+- intent: certification
+  examples: |
+    - what about the certificate?
+    - will i receive any certificate?
+    - is certificate provided?
+    - certi?
+    - how and when will i receive my certificates?
+    - will i get certi also?
+    - is there any certi for the course
+
+
+- intent: cost
+  examples: |
+    - what is the cost of a course
+    - how much will i have to pay for this
+    - any amount i gotta pay?
+    - what is the registration cost?
+    - how much i have to pay for a course?
+    - what is the cost of certificate

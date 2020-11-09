@@ -29,12 +29,30 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: about ieee
+- story: about ieee 1
   steps:
   - intent: about_ieee
   - action: utter_about_ieee
 
-- story: about program
+- story: about ieee 2
   steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_ieee
+  - action: utter_about_ieee
   - intent: about_program
   - action: utter_about_program
+
+- story: about program
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_program
+  - action: utter_about_program
+  - intent: about_ieee
+  - action: utter_about_ieee
+
+- story: certificates
+  steps:
+  - intent: certification
+  - action: utter_certification

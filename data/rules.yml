@@ -16,3 +16,7 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+- rule: Certi cost
+  steps:
+  - intent: cost
+  - action: utter_cost

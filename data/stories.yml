@@ -56,3 +56,11 @@ stories:
   steps:
   - intent: certification
   - action: utter_certification
+
+- story: Story from Conversation fr test
+  steps:
+  - action: utter_greet
+  - intent: greet
+  - action: utter_about_ieee
+  - intent: affirm
+  - action: utter_happy

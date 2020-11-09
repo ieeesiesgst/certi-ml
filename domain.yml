@@ -58,3 +58,12 @@ responses:
   utter_certification:
   - text: All the courses are certified. You will receive your certificate once you are able to 
       successfully complete a course.
+
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?

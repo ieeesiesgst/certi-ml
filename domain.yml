@@ -14,11 +14,24 @@ intents:
 - about_program
 - certification
 - cost
+- smalltalk_confirmation_yes
+
+actions:
+- utter_greet
+- utter_happy
+- mood_unhappy
+- utter_cheer_up
+- utter_did_that_help
+- utter_goodbye
+- utter_about_ieee
+- utter_about_program
+- utter_certification
+- utter_smalltalk_confirmation_yes
 
 responses:
   utter_greet:
-  - text: "Hola!\nMy name is Desi..\nHow can I help you?"
-  - text: "Heyy!\nHow may I help you?"
+  - text: "Hola!\nMy name is iBot..\nHow can I assist you?"
+  - text: "Heyy!\nHow may I assist you?"
   
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
@@ -41,6 +54,9 @@ responses:
   - text: "Hope you liked our service!\nHappy Learning :-)"
   - text: "Bye"
   - text: "Byee!\nSee you."
+  - text: "See you soon!"
+  - text: "Bye-bye!"
+  - text: "Till next time!"
   
   utter_iamabot:
   - text: "I'm an IEEE SIESGST conversational bot."
@@ -54,20 +70,21 @@ responses:
       \ all extra-curricular activities in the college. This acedamic year, IEEE SIESGST\
       \ saw a growth like never before within participation for most of it's events\
       \ having increased by leaps and bounds.\nCheckout our Social Media Handles:\n\
-      \ - [Our Website](https://ieeesiesgst.co.in/)\n- [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n- [Instagram](https://www.instagram.com/ieeesiesgst/)\n \
-      \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n- [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"
+      \ - [Our Website](https://ieeesiesgst.co.in/)\n - [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n - [Instagram](https://www.instagram.com/ieeesiesgst/)\n\
+      \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n - [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"
   
   utter_about_program:
   - text: "It is an initiative taken by IEEE SIESGST to provide some of the most beneficial
-      and trending technical courses in this platform to help you upskill with latest
-      technologies."
+    and trending technical courses in this platform to help you upskill with latest
+    technologies."
+
   utter_cost:
   - text: "All the courses will be free of cost because we strongly beleive in learning skills that matter. 
-      Just register and start learning!!!"
+    Just register and start learning!!!"
   
   utter_certification:
   - text: "All the courses are certified. You will receive your certificate once you are able to 
-      successfully complete a course."
+    successfully complete a course."
 
   utter_please_rephrase:
   - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
@@ -77,3 +94,8 @@ responses:
 
   utter_ask_rephrase:
   - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
+
+  utter_smalltalk_confirmation_yes:
+  - text: "Great!"
+  - text: "All right!"
+  - text: "Good!"

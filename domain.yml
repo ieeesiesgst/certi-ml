@@ -1,6 +1,4 @@
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+version: "2.0"
 
 intents:
 - greet
@@ -14,19 +12,15 @@ intents:
 - about_program
 - certification
 - cost
-- smalltalk_confirmation_yes
+- about_course
+# - smalltalk_confirmation_yes
+entities:
+- courses
+slots:
+  courses:
+    type: text
+    influence_conversation: true
 
-actions:
-- utter_greet
-- utter_happy
-- mood_unhappy
-- utter_cheer_up
-- utter_did_that_help
-- utter_goodbye
-- utter_about_ieee
-- utter_about_program
-- utter_certification
-- utter_smalltalk_confirmation_yes
 
 responses:
   utter_greet:
@@ -38,12 +32,15 @@ responses:
     text: 'Here is something to cheer you up:'
   
   utter_did_that_help:
-  - text: "\nDid that help you?"
+  - text: "Did that help you?"
   
   utter_happy:
   - text: "Great, carry on!"
   - text: "Nice!"
   - text: "Yeah.."
+  - text: "Yess"
+  - text: "All right!"
+  - text: "Cool!"
   
   utter_thanks:
   - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
@@ -99,3 +96,11 @@ responses:
   - text: "Great!"
   - text: "All right!"
   - text: "Good!"
+
+actions:
+- action_course_information
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

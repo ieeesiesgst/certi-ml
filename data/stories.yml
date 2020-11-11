@@ -29,20 +29,36 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-- story: about ieee
+- story: about all
   steps:
   - intent: about_ieee
   - action: utter_about_ieee
-
-- story: about program
-  steps:
+  - action: utter_did_that_help
+  - intent: affirm
   - intent: about_program
   - action: utter_about_program
-
-- story: certificates
-  steps:
+  - action: utter_did_that_help
+  - intent: affirm
   - intent: certification
   - action: utter_certification
+  - intent: affirm
+  - action: utter_goodbye
+
+
+# - story: about ieee
+#   steps:
+#   - intent: about_ieee
+#   - action: utter_about_ieee
+
+# - story: about program
+#   steps:
+#   - intent: about_program
+#   - action: utter_about_program
+
+# - story: certificates
+#   steps:
+#   - intent: certification
+#   - action: utter_certification
 
 - story: Story from Conversation fr test
   steps:
@@ -54,5 +70,38 @@ stories:
   
 - story: small talk confirmation yes
   steps:
-  - intent: smalltalk_confirmation_yes
+  - intent: affirm
   - action: utter_smalltalk_confirmation_yes
+
+- story: course info machine learning
+  steps:
+    - intent: about_course
+      entities:
+      - courses
+    - slot_was_set:
+      - courses: Machine Learning
+    - action: action_course_information
+
+- story: course info cloud compute
+  steps:
+    - intent: about_course
+      entities:
+      - courses
+    - slot_was_set:
+      - courses: Cloud Computing
+    - action: action_course_information
+
+- story: course info cyber security
+  steps:
+    - intent: about_course
+      entities:
+      - courses
+    - slot_was_set:
+      - courses: Cyber security
+    - action: action_course_information
+
+- story: course info unspecified
+  steps:
+    - intent: about_course
+    - action: action_course_information
+

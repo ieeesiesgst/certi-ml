@@ -108,5 +108,28 @@ stories:
       - ieee
       - sub_chapters
     - slot_was_set:
-      - courses: Cyber security
-    - action: action_course_information
+      - sub_chapters: wie
+    - action: action_about_ieee
+
+
+- story: about subchapter mtts
+  steps:
+    - intent: about_ieee
+      entities:
+      - ieee
+      - sub_chapters
+    - slot_was_set:
+      - sub_chapters: mtts
+    - action: action_about_ieee
+
+
+- story: about subchapter computer society
+  steps:
+    - intent: about_ieee
+      entities:
+      - ieee
+      - sub_chapters
+    - slot_was_set:
+      - sub_chapters: computer society
+    - action: action_about_ieee
+

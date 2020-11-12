@@ -18,6 +18,9 @@ nlu:
     - goodevening
     - good afternoon
     - hii
+    - hola
+    - bonjur
+    
 
 
 - intent: goodbye
@@ -222,8 +225,11 @@ nlu:
     - can u tell be different [subchapters](sub_chapters) of ieee
     - what are the [subchapters](sub_chapters)
     - what is [wie](sub_chapters)?
+    - provide me the details of [women in engineering](sub_chapters)
     - tell me about [mtts](sub_chapters)
-    - about [computer society]((sub_chapters)
+    - what about [microwave theory and techniques society](sub_chapters)
+    - about [computer society](sub_chapters)
+    - more info about [cs](sub_chapters)
 
 
     
@@ -244,6 +250,7 @@ nlu:
     - what is this website about?
     - this website is used for?
     - what does this webpage offer
+    - tell me about this program started by ieee siesgst 
 
 
 - intent: certification
@@ -258,6 +265,7 @@ nlu:
     - is there any eligibility for receiving certificates?
     - certificates?
     - tell me about certis
+    - tell me about this certification provided by ieee siesgst 
 
 
 - intent: cost
@@ -373,3 +381,4 @@ nlu:
     - give me information on [cyber security](courses)
     - what are the certification [courses](courses) you offer?
     - is there any last date to complete the course?
+    - tell me about this courses provided by ieee siesgst 

@@ -34,6 +34,16 @@ courseInfo = {
     
 }
 
+subchapters = {
+    "wie": "IEEE WIE is one of the world’s leaders in changing the face of engineering. Our global network connects nearly 20,000 members in over 100 countries to advance women in technology at all points in their life and career. IEEE WIE members make lifelong friendships, acquire influential mentors, and make a difference for the benefit of humanity.",
+    "women in engineering": "IEEE WIE is one of the world’s leaders in changing the face of engineering. Our global network connects nearly 20,000 members in over 100 countries to advance women in technology at all points in their life and career. IEEE WIE members make lifelong friendships, acquire influential mentors, and make a difference for the benefit of humanity.",
+    "microwave theory and techniques society": "The IEEE Microwave Theory and Techniques Society (MTT-S) is a transnational society with more than 10,500 members and 190 chapters worldwide. Our society promotes the advancement of microwave theory and its applications, including RF, microwave, millimeter-wave, and terahertz technologies.",
+    "mtts": "The IEEE Microwave Theory and Techniques Society (MTT-S) is a transnational society with more than 10,500 members and 190 chapters worldwide. Our society promotes the advancement of microwave theory and its applications, including RF, microwave, millimeter-wave, and terahertz technologies.",
+    "computer society":"IEEE Computer Society is a professional society of the Institute of Electrical and Electronics Engineers. Its purpose and scope is 'to advance the theory, practice, and application of computer and information processing science and technology' and the 'professional standing of its members.'",
+    "cs":"IEEE Computer Society is a professional society of the Institute of Electrical and Electronics Engineers. Its purpose and scope is 'to advance the theory, practice, and application of computer and information processing science and technology' and the 'professional standing of its members.'"
+
+}
+
 
 class ActionForCourseinfo(Action):
 
@@ -47,7 +57,7 @@ class ActionForCourseinfo(Action):
         course = tracker.get_slot("courses")
 
         if course.lower() in courseInfo:
-            dispatcher.utter_message(text=f"{courseInfo[course].capitalize()}")
+            dispatcher.utter_message(text=f"{courseInfo[course.lower()].capitalize()}")
             
         else:
             dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i.capitalize() for i in courseInfo])}")
@@ -56,7 +66,7 @@ class ActionForCourseinfo(Action):
 
 
 
-class ActionInformation(Action):
+class ActionAboutIeee(Action):
     def name(self) -> Text:
         return "action_about_ieee"
 
@@ -64,17 +74,17 @@ class ActionInformation(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         spoken = False
+        subchap = tracker.get_slot("sub_chapters")
         for result in tracker.latest_message['entities']:
-            spoken = False
-            if result['entity'] == 'program_info':
-                dispatcher.utter_message(text='This is the program provided by IEEE SIESGST.\nHere you will be introduced to the latest techolologies in the market, and also you will receive a certificate which you can add to your Linkdin profile.')
+            if result['entity'] == 'ieee':
+                dispatcher.utter_message(template='utter_about_ieee')
                 spoken = True
-            if result['entity'] == 'courses_info':
-                #dispatcher.utter_message(text="Currently following courses are provided:")
-                dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i for i in courseInfo])}")
+            if result['entity'] == 'sub_chapters':
+                if subchap.lower() in subchapters:
+                    dispatcher.utter_message(text=f"{subchapters[subchap.lower()]}")
+                else:
+                    dispatcher.utter_message(text="IEEE SIESGST has 3 sub-chapters:\n- WIE(Women In Engineering)\n- MTTS(Microwave Theory and Techniques Society)\n- CS(Computer Society)")
                 spoken = True
         if not spoken:
             dispatcher.utter_message(text="Could you repeat what you're trying to look at?")
         return []
-
-

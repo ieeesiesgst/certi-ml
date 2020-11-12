@@ -22,7 +22,7 @@ slots:
   courses:
     type: text
     influence_conversation: true
-    
+
   sub_chapters:
     type: text
     influence_conversation: true
@@ -33,14 +33,14 @@ responses:
   - text: "Hi there..👋 You can call me iBot \nI am here to assist you with the new Certi Platform\
       \ developed by IEEE SIESGST.\nTo get started try asking some of these: "
     buttons:
-    - title: "What is IEEE SIESGST all about?"
-      payload: "/about_ieee"
     - title: "What is this program about?"
       payload: "/about_program"
     - title: "What are the courses offered?"
-      payload: "about courses"
+      payload: "/about_course"
     - title: "About certificates"
       payload: "/certification"    
+    - title: "Cost of enrollment!"
+      payload: "/about_ieee"
   
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
@@ -114,6 +114,7 @@ responses:
 
 actions:
 - action_course_information
+- action_about_ieee
 
 session_config:
   session_expiration_time: 60

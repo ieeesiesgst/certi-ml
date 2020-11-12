@@ -234,6 +234,10 @@ nlu:
     - about this program
     - what is the motto of this program?
     - why should join this program?
+    - tell me about your website
+    - what is this website about?
+    - this website is used for?
+    - what does this webpage offer
 
 
 - intent: certification
@@ -261,6 +265,8 @@ nlu:
     - do i need to pay to enroll in the course?
     - will i receive my certificates only after the payment?
     - do i need to pay for this program
+    - where will i get my payment receipts
+    - any payment?
 
 # - intent: smalltalk_confirmation_yes
 #   examples: |
@@ -359,3 +365,5 @@ nlu:
     - Can you tell me about [machine learning](courses)
     - what will i learn from [cloud computing](courses)
     - give me information on [cyber security](courses)
+    - what are the certification [courses](courses) you offer?
+    - is there any last date to complete the course?

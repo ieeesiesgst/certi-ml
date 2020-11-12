@@ -30,8 +30,17 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Hola!\nMy name is iBot..\nHow can I assist you?"
-  - text: "Heyy!\nHow may I assist you?"
+  - text: "Hi there..👋 You can call me iBot \nI am here to assist you with the new Certi Platform\
+      \ developed by IEEE SIESGST.\nTo get started try asking some of these: "
+    buttons:
+    - title: "What is IEEE SIESGST all about?"
+      payload: "/about_ieee"
+    - title: "What is this program about?"
+      payload: "/about_program"
+    - title: "What are the courses offered?"
+      payload: "about courses"
+    - title: "About certificates"
+      payload: "/certification"    
   
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
@@ -86,7 +95,7 @@ responses:
     Just register and start learning!!!"
   
   utter_certification:
-  - text: "All the courses are certified. You will receive your certificate once you are able to 
+  - text: "All the courses are certified. You will receive your certificate once you have 
     successfully complete a course."
 
   utter_please_rephrase:

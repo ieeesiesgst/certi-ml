@@ -16,8 +16,14 @@ intents:
 # - smalltalk_confirmation_yes
 entities:
 - courses
+- ieee
+- sub_chapters
 slots:
   courses:
+    type: text
+    influence_conversation: true
+    
+  sub_chapters:
     type: text
     influence_conversation: true
 

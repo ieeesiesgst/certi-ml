@@ -208,17 +208,23 @@ nlu:
 
 - intent: about_ieee
   examples: |
-    - what is ieee?
-    - what is ieee siesgst?
-    - tell me about ieee sies gst
-    - about ieee
-    - about ieee siesgst
-    - give some info about ieee siesgst
-    - what is ieee siesgst about?
-    - more info about ieee
-    - provide me the details of ieee siesgst
-    - can you tell me more about ieee
-    - provide information about ieee
+    - what is [ieee](ieee)?
+    - what is [ieee siesgst](ieee)?
+    - tell me about [ieee sies gst](ieee)
+    - about [ieee](ieee)
+    - about [ieee siesgst](ieee)
+    - give some info about [ieee siesgst](ieee)
+    - what is [ieee siesgst](ieee) about?
+    - more info about [ieee](ieee)
+    - provide me the details of [ieee siesgst](ieee)
+    - can you tell me more about [ieee](ieee)
+    - provide information about [ieee](ieee)
+    - can u tell be different [subchapters](sub_chapters) of ieee
+    - what are the [subchapters](sub_chapters)
+    - what is [wie](sub_chapters)?
+    - tell me about [mtts](sub_chapters)
+    - about [computer society]((sub_chapters)
+
 
     
 - intent: about_program

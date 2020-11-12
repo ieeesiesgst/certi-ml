@@ -32,7 +32,10 @@ stories:
 - story: about all
   steps:
   - intent: about_ieee
-  - action: utter_about_ieee
+    entities:
+      - ieee
+      - sub_chapters
+  - action: action_about_ieee 
   - action: utter_did_that_help
   - intent: affirm
   - intent: about_program
@@ -48,7 +51,7 @@ stories:
 # - story: about ieee
 #   steps:
 #   - intent: about_ieee
-#   - action: utter_about_ieee
+#   - action: action_about_ieee
 
 # - story: about program
 #   steps:
@@ -60,14 +63,7 @@ stories:
 #   - intent: certification
 #   - action: utter_certification
 
-- story: Story from Conversation fr test
-  steps:
-  - action: utter_greet
-  - intent: greet
-  - action: utter_about_ieee
-  - intent: affirm
-  - action: utter_happy
-  
+
 - story: small talk confirmation yes
   steps:
   - intent: affirm
@@ -105,3 +101,12 @@ stories:
     - intent: about_course
     - action: action_course_information
 
+- story: about subchapter wie
+  steps:
+    - intent: about_ieee
+      entities:
+      - ieee
+      - sub_chapters
+    - slot_was_set:
+      - courses: Cyber security
+    - action: action_course_information

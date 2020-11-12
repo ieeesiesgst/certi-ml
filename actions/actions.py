@@ -53,3 +53,28 @@ class ActionForCourseinfo(Action):
             dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i.capitalize() for i in courseInfo])}")
      
         return []
+
+
+
+class ActionInformation(Action):
+    def name(self) -> Text:
+        return "action_about_ieee"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        spoken = False
+        for result in tracker.latest_message['entities']:
+            spoken = False
+            if result['entity'] == 'program_info':
+                dispatcher.utter_message(text='This is the program provided by IEEE SIESGST.\nHere you will be introduced to the latest techolologies in the market, and also you will receive a certificate which you can add to your Linkdin profile.')
+                spoken = True
+            if result['entity'] == 'courses_info':
+                #dispatcher.utter_message(text="Currently following courses are provided:")
+                dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i for i in courseInfo])}")
+                spoken = True
+        if not spoken:
+            dispatcher.utter_message(text="Could you repeat what you're trying to look at?")
+        return []
+
+

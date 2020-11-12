@@ -14,6 +14,8 @@ intents:
 - cost
 - about_course
 # - smalltalk_confirmation_yes
+- did_not_help
+
 entities:
 - courses
 - ieee
@@ -36,11 +38,11 @@ responses:
     - title: "What is this program about?"
       payload: "/about_program"
     - title: "What are the courses offered?"
-      payload: "/about_course"
+      payload: "about courses"
     - title: "About certificates"
       payload: "/certification"    
     - title: "Cost of enrollment!"
-      payload: "/about_ieee"
+      payload: "/cost"
   
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
@@ -56,6 +58,7 @@ responses:
   - text: "Yess"
   - text: "All right!"
   - text: "Cool!"
+  - text: "Awesome"
   
   utter_thanks:
   - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
@@ -64,7 +67,6 @@ responses:
   utter_goodbye:
   - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
   - text: "Hope you liked our service!\nHappy Learning :-)"
-  - text: "Bye"
   - text: "Byee!\nSee you."
   - text: "See you soon!"
   - text: "Bye-bye!"
@@ -111,6 +113,11 @@ responses:
   - text: "Great!"
   - text: "All right!"
   - text: "Good!"
+
+  utter_did_not_help:
+  - text: "I can be trained to be more useful. My developer will keep training me."
+  - text: "I must be missing some knowledge. I'll have my developer look into this."
+  - text: "I can improve with continuous feedback. My training is ongoing."
 
 actions:
 - action_course_information

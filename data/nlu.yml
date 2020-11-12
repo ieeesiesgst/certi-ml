@@ -38,6 +38,7 @@ nlu:
     - see you later
     - okay then byee
     - thanku for the help!
+    - c u
 
 
 - intent: affirm
@@ -230,6 +231,7 @@ nlu:
     - what about [microwave theory and techniques society](sub_chapters)
     - about [computer society](sub_chapters)
     - more info about [cs](sub_chapters)
+    - what is [mtt-s](sub_chapters)
 
 
     
@@ -381,4 +383,36 @@ nlu:
     - give me information on [cyber security](courses)
     - what are the certification [courses](courses) you offer?
     - is there any last date to complete the course?
-    - tell me about this courses provided by ieee siesgst 
+    - tell me about this courses provided by ieee siesgst
+    - what can you do for me?
+    - how can you help me
+
+- intent: did_not_help
+  examples: |
+    - you're not helping me
+    - you are bad
+    - you're very bad
+    - you're really bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're bad
+    - you're awful
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are very bad
+    - you are waste
+    - you're a bad
+    - you're not a good
+    - you're not very good
+    - you're terrible
+    - you're the worst
+    - you're the worst ever
+    - you're worthless

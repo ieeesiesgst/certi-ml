@@ -60,7 +60,7 @@ class ActionForCourseinfo(Action):
             dispatcher.utter_message(text=f"{courseInfo[course.lower()].capitalize()}")
             
         else:
-            dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i.capitalize() for i in courseInfo])}")
+            dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i.capitalize() for i in courseInfo])} \nTo know more details, search any course of your interest.")
      
         return []
 

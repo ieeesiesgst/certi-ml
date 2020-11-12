@@ -27,7 +27,7 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_did_not_help
 
 - story: about all
   steps:
@@ -38,14 +38,16 @@ stories:
   - action: action_about_ieee 
   - action: utter_did_that_help
   - intent: affirm
+  - action: utter_happy
   - intent: about_program
   - action: utter_about_program
   - action: utter_did_that_help
   - intent: affirm
+  - action: utter_happy
   - intent: certification
   - action: utter_certification
   - intent: affirm
-  - action: utter_goodbye
+  - action: utter_happy
 
 
 # - story: about ieee
@@ -133,3 +135,7 @@ stories:
       - sub_chapters: computer society
     - action: action_about_ieee
 
+- story: did not help
+  steps:
+  - intent: did_not_help
+  - action: utter_did_not_help

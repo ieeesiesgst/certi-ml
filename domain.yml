@@ -15,17 +15,24 @@ intents:
 - about_course
 # - smalltalk_confirmation_yes
 - did_not_help
+- contact_info
 
 entities:
 - courses
 - ieee
 - sub_chapters
+- social_links
+
 slots:
   courses:
     type: text
     influence_conversation: true
 
   sub_chapters:
+    type: text
+    influence_conversation: true
+
+  social_links:
     type: text
     influence_conversation: true
 
@@ -122,6 +129,7 @@ responses:
 actions:
 - action_course_information
 - action_about_ieee
+- action_contact_info
 
 session_config:
   session_expiration_time: 60

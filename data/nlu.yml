@@ -416,3 +416,25 @@ nlu:
     - you're the worst
     - you're the worst ever
     - you're worthless
+
+- intent: contact_info
+  examples: |
+    - i want to take a guest lecture, who should i contact?
+    - procedure for colaboration
+    - how to colab?
+    - what are your [social media handles](social_links)
+    - provide me [social media links](social_links)
+    - what are your [social accounts](social_links) available?
+    - what is your [linkedin](social_links) handle?
+    - what is your [instagram](social_links) handle?
+    - what is your [facebook](social_links) handle?
+    - what is your [youtube](social_links) handle?
+    - can you give me your [insta](social_links) id?
+    - can you give me your [fb](social_links) id?
+    - can you give me your [youtube](social_links) id?
+    - can you give me your [linkedin](social_links) id?
+    - ieee siesgst [fb](social_links) link please
+    - ieee siesgst [youtube](social_links)
+    - ieee [linkedin](social_links)
+    - ieee [fb](social_links)
+    - ieee [facebook](social_links)

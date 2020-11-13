@@ -44,6 +44,12 @@ subchapters = {
 
 }
 
+sociallinks = {
+    "linkedin": "Click [here](https://www.linkedin.com/company/ieee-gst/) to visit our LinkedIn Page.",
+    "instagram": "Click [here](https://www.instagram.com/ieeesiesgst/) to visit our Instagram Page.",
+    "facebook": "Click [here](https://www.facebook.com/ieeesiesgstofficial/) to visit our Facebook Page.",
+    "youtube": "Click [here](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw) to visit our YouTube channel.",
+}
 
 class ActionForCourseinfo(Action):
 
@@ -84,6 +90,29 @@ class ActionAboutIeee(Action):
                     dispatcher.utter_message(text=f"{subchapters[subchap.lower()]}")
                 else:
                     dispatcher.utter_message(text="IEEE SIESGST has 3 sub-chapters:\n- WIE(Women In Engineering)\n- MTTS(Microwave Theory and Techniques Society)\n- CS(Computer Society)")
+                spoken = True
+        if not spoken:
+            dispatcher.utter_message(text="Could you repeat what you're trying to look at?")
+        return []
+
+class ActionContactInfo(Action):
+    def name(self) -> Text:
+        return "action_contact_info"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        spoken = False
+        social = tracker.get_slot("social_links")
+        for result in tracker.latest_message['entities']:
+            if result['entity'] == 'contact_info':
+                dispatcher.utter_message(template='utter_contact_info')
+                spoken = True
+            if result['entity'] == 'social_links':
+                if social.lower() in sociallinks:
+                    dispatcher.utter_message(text=f"{sociallinks[social.lower()]}")
+                else:
+                    dispatcher.utter_message(text="Following are our active social media handles: \n1) LinkedIn 2) Youtube 3) Instagram 4) Facebook. \nTo visit any one of these please mention it below.")
                 spoken = True
         if not spoken:
             dispatcher.utter_message(text="Could you repeat what you're trying to look at?")

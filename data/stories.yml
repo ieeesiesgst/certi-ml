@@ -139,3 +139,39 @@ stories:
   steps:
   - intent: did_not_help
   - action: utter_did_not_help
+
+- story: about social media links
+  steps:
+    - intent: contact_info
+      entities:
+      - social_links
+    - slot_was_set:
+      - social_links: linkedin
+    - action: action_contact_info
+
+- story: about social media links
+  steps:
+    - intent: contact_info
+      entities:
+      - social_links
+    - slot_was_set:
+      - social_links: instagram
+    - action: action_contact_info
+
+- story: about social media links
+  steps:
+    - intent: contact_info
+      entities:
+      - social_links
+    - slot_was_set:
+      - social_links: facebook
+    - action: action_contact_info
+
+- story: about social media links
+  steps:
+    - intent: contact_info
+      entities:
+      - social_links
+    - slot_was_set:
+      - social_links: youtube
+    - action: action_contact_info

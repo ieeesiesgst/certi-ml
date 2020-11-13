@@ -183,3 +183,9 @@ stories:
   steps:
   - intent: about_website
   - action: utter_about_website
+
+
+- story: about the events
+  steps:
+  - intent: about_events
+  - action: utter_about_website

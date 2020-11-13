@@ -447,3 +447,12 @@ nlu:
     - your website link
     - can you show me ieee siesgst webpage
     - i want to know more about this website
+
+- intent: about_events
+  examples: |
+    - what all events do you conduct at ieee siesgst
+    - tell me about the events
+    - do you take seminars?
+    - what are your annual functions
+    - how can i participate in your events?
+    - what is techopedia

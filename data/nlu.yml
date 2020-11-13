@@ -438,3 +438,12 @@ nlu:
     - ieee [linkedin](social_links)
     - ieee [fb](social_links)
     - ieee [facebook](social_links)
+
+- intent: about_website
+  examples: |
+    - i want to know about your website
+    - tell me more about your site
+    - what about your webpage?
+    - your website link
+    - can you show me ieee siesgst webpage
+    - i want to know more about this website

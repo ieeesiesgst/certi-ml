@@ -16,6 +16,7 @@ intents:
 # - smalltalk_confirmation_yes
 - did_not_help
 - contact_info
+- about_website
 
 entities:
 - courses
@@ -91,8 +92,9 @@ responses:
       \ all extra-curricular activities in the college. This acedamic year, IEEE SIESGST\
       \ saw a growth like never before within participation for most of it's events\
       \ having increased by leaps and bounds.\nCheckout our Social Media Handles:\n\
-      \ - [Our Website](https://ieeesiesgst.co.in/)\n - [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n - [Instagram](https://www.instagram.com/ieeesiesgst/)\n\
-      \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n - [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"
+      \ - [Our Website](https://ieeesiesgst.co.in/)"
+      # \n - [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n - [Instagram](https://www.instagram.com/ieeesiesgst/)\n\
+      # \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n - [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"
   
   utter_about_program:
   - text: "It is an initiative taken by IEEE SIESGST to provide some of the most beneficial
@@ -125,6 +127,11 @@ responses:
   - text: "I can be trained to be more useful. My developer will keep training me."
   - text: "I must be missing some knowledge. I'll have my developer look into this."
   - text: "I can improve with continuous feedback. My training is ongoing."
+
+  utter_about_website:
+  - text: "Click [here](https://ieeesiesgst.co.in/) to visit our website."
+  - text: "Here is our [website](https://ieeesiesgst.co.in/)"
+  - text: "Please visit our [website](https://ieeesiesgst.co.in/) for more info."
 
 actions:
 - action_course_information

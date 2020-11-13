@@ -175,3 +175,8 @@ stories:
     - slot_was_set:
       - social_links: youtube
     - action: action_contact_info
+
+- story: about website
+  steps:
+  - intent: about_website
+  - action: utter_about_website

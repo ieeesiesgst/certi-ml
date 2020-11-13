@@ -36,7 +36,6 @@ stories:
       - ieee
       - sub_chapters
   - action: action_about_ieee 
-  - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - intent: about_program
@@ -144,6 +143,7 @@ stories:
   steps:
     - intent: contact_info
       entities:
+      - contact
       - social_links
     - slot_was_set:
       - social_links: linkedin
@@ -153,6 +153,7 @@ stories:
   steps:
     - intent: contact_info
       entities:
+      - contact
       - social_links
     - slot_was_set:
       - social_links: instagram
@@ -162,6 +163,7 @@ stories:
   steps:
     - intent: contact_info
       entities:
+      - contact
       - social_links
     - slot_was_set:
       - social_links: facebook
@@ -171,6 +173,7 @@ stories:
   steps:
     - intent: contact_info
       entities:
+      - contact
       - social_links
     - slot_was_set:
       - social_links: youtube

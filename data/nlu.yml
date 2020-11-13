@@ -419,9 +419,9 @@ nlu:
 
 - intent: contact_info
   examples: |
-    - i want to take a guest lecture, who should i contact?
-    - procedure for colaboration
-    - how to colab?
+    - i want to take a guest lecture, who should i [contact](contact)?
+    - procedure for [colaboration](contact)
+    - how to [colab](contact)?
     - what are your [social media handles](social_links)
     - provide me [social media links](social_links)
     - what are your [social accounts](social_links) available?

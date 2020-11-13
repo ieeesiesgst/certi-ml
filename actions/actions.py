@@ -47,9 +47,12 @@ subchapters = {
 sociallinks = {
     "linkedin": "Click [here](https://www.linkedin.com/company/ieee-gst/) to visit our LinkedIn Page.",
     "instagram": "Click [here](https://www.instagram.com/ieeesiesgst/) to visit our Instagram Page.",
+    "insta": "Click [here](https://www.instagram.com/ieeesiesgst/) to visit our Instagram Page.",
     "facebook": "Click [here](https://www.facebook.com/ieeesiesgstofficial/) to visit our Facebook Page.",
+    "fb": "Click [here](https://www.facebook.com/ieeesiesgstofficial/) to visit our Facebook Page.",
     "youtube": "Click [here](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw) to visit our YouTube channel.",
 }
+
 
 class ActionForCourseinfo(Action):
 
@@ -59,15 +62,11 @@ class ActionForCourseinfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
         course = tracker.get_slot("courses")
-
         if course.lower() in courseInfo:
-            dispatcher.utter_message(text=f"{courseInfo[course.lower()].capitalize()}")
-            
+            dispatcher.utter_message(text=f"{courseInfo[course.lower()].capitalize()}")    
         else:
-            dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i.capitalize() for i in courseInfo])} \nTo know more details, search any course of your interest.")
-     
+            dispatcher.utter_message(text=f"Currently following courses are provided:\n{', '.join([i.capitalize() for i in courseInfo])} \nTo get more details, let me know in which course you are interested..!")
         return []
 
 
@@ -95,6 +94,8 @@ class ActionAboutIeee(Action):
             dispatcher.utter_message(text="Could you repeat what you're trying to look at?")
         return []
 
+
+
 class ActionContactInfo(Action):
     def name(self) -> Text:
         return "action_contact_info"
@@ -105,14 +106,15 @@ class ActionContactInfo(Action):
         spoken = False
         social = tracker.get_slot("social_links")
         for result in tracker.latest_message['entities']:
-            if result['entity'] == 'contact_info':
-                dispatcher.utter_message(template='utter_contact_info')
+            if result['entity'] == 'contact':
+                dispatcher.utter_message(text="Following are our active social media handles: \n1) [LinkedIn](https://www.linkedin.com/company/ieee-gst/)\n2) [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n3) [Instagram](https://www.instagram.com/ieeesiesgst/)\n4) [Facebook](https://www.facebook.com/ieeesiesgstofficial/).")
                 spoken = True
             if result['entity'] == 'social_links':
                 if social.lower() in sociallinks:
                     dispatcher.utter_message(text=f"{sociallinks[social.lower()]}")
                 else:
-                    dispatcher.utter_message(text="Following are our active social media handles: \n1) LinkedIn 2) Youtube 3) Instagram 4) Facebook. \nTo visit any one of these please mention it below.")
+                    dispatcher.utter_message(text="Following are our active social media handles: \n1) LinkedIn \n2) Youtube \n3) Instagram \n4) Facebook.")
+                    dispatcher.utter_message(text="I can also provide you the the links of any specified social media handles if you want! :D")
                 spoken = True
         if not spoken:
             dispatcher.utter_message(text="Could you repeat what you're trying to look at?")

@@ -23,6 +23,7 @@ entities:
 - ieee
 - sub_chapters
 - social_links
+- contact
 
 slots:
   courses:
@@ -91,7 +92,7 @@ responses:
   - text: "IEEE is the oldest Student body of SIES GST. It is an active body in organising\
       \ all extra-curricular activities in the college. This acedamic year, IEEE SIESGST\
       \ saw a growth like never before within participation for most of it's events\
-      \ having increased by leaps and bounds.\nCheckout our Social Media Handles:\n\
+      \ having increased by leaps and bounds.\nReach out to us: \
       \ - [Our Website](https://ieeesiesgst.co.in/)"
       # \n - [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n - [Instagram](https://www.instagram.com/ieeesiesgst/)\n\
       # \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n - [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"

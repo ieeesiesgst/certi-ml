@@ -189,3 +189,8 @@ stories:
   steps:
   - intent: about_events
   - action: utter_about_website
+
+- story: user course progress
+  steps:
+  - intent: my_progress
+  - action: utter_progress_status

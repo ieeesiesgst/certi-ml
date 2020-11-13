@@ -456,3 +456,11 @@ nlu:
     - what are your annual functions
     - how can i participate in your events?
     - what is techopedia
+
+
+- intent: my_progress
+  examples: |
+    - my profile status
+    - my dashboard details?
+    - status of courses that i have enrolled
+    - where i will find my details

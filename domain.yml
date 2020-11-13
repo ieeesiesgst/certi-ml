@@ -19,6 +19,7 @@ intents:
 - contact_info
 - about_website
 - my_progress
+- about_events
 
 entities:
 - courses
@@ -138,6 +139,10 @@ responses:
 
   utter_event_info:
   - text: "We are actively conducting various events throught the year!\nFollow us on our social media handles to get updates!\nTill then checkout our grand annual fest [Techopedia 20k9](https://ieeesiesgst.co.in/techopedia/index.html)"
+
+  utter_progress_status:
+  - text: "You can find an option to view your profile wherein you can see your enrollments and usage history."
+
 
 actions:
 - action_course_information

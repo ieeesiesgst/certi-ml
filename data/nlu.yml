@@ -491,3 +491,17 @@ nlu:
     - who is vcp of ieee?
     - who is technical head of ieee?
     - who is secretary of ieee?
+
+- intent: membership
+  examples: |
+    - how to get membership
+    - how to get into ieee siesgst
+    - how to get into ieee?
+    - how can i be part of ieee
+    - i want to be a part of ieee siesgst
+    - can i join ieee
+    - how to join ieee
+    - process to get into ieee
+    - what is the procedure to be a part of ieee?
+    - what is the eligibility criteria for joinning ieee
+    - when is the interview for ieee council selection?

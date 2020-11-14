@@ -199,3 +199,8 @@ stories:
   steps:
   - intent: council
   - action: utter_council
+
+- story: membership details
+  steps:
+  - intent: membership
+  - action: utter_membership

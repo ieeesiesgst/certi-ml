@@ -13,13 +13,13 @@ intents:
 - certification
 - cost
 - about_course
-- about_events
 # - smalltalk_confirmation_yes
 - did_not_help
 - contact_info
 - about_website
 - my_progress
 - about_events
+- council
 
 entities:
 - courses
@@ -142,6 +142,9 @@ responses:
 
   utter_progress_status:
   - text: "You can find an option to view your profile wherein you can see your enrollments and usage history."
+
+  utter_council:
+  - text: "Click [IEEE SIESGST COUNCIL](https://ieeesiesgst.co.in/team.html) to view our council members."
 
 
 actions:

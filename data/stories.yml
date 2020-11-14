@@ -194,3 +194,8 @@ stories:
   steps:
   - intent: my_progress
   - action: utter_progress_status
+
+- story: council members
+  steps:
+  - intent: council
+  - action: utter_council

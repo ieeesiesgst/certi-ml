@@ -39,6 +39,7 @@ nlu:
     - okay then byee
     - thanku for the help!
     - c u
+    - tata
 
 
 - intent: affirm
@@ -420,6 +421,8 @@ nlu:
 - intent: contact_info
   examples: |
     - i want to take a guest lecture, who should i [contact](contact)?
+    - how to [contact](contact)
+    - i want to [contact](contact)
     - procedure for [colaboration](contact)
     - how to [colab](contact)?
     - what are your [social media handles](social_links)
@@ -464,3 +467,27 @@ nlu:
     - my dashboard details?
     - status of courses that i have enrolled
     - where i will find my details
+    - how can i check my course progress?
+    - i want to track my progress
+    - what is the progress of my course?
+
+- intent: council
+  examples: |
+    - who are your council members?
+    - tell me this year's council members
+    - team members of ieee siesgst
+    - who is behind ieee siesgst
+    - this team consists of?
+    - ieee team
+    - ieee council
+    - ieee council members
+    - ieee team members
+    - tell me names behind ieee siesgst
+    - who is working for ieee?
+    - ieee siesgst is run by?
+    - who is chairperson of ieee?
+    - who is cp of ieee?
+    - who is vice-chairperson of ieee?
+    - who is vcp of ieee?
+    - who is technical head of ieee?
+    - who is secretary of ieee?

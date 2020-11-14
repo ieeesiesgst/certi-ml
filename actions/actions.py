@@ -107,7 +107,7 @@ class ActionContactInfo(Action):
         social = tracker.get_slot("social_links")
         for result in tracker.latest_message['entities']:
             if result['entity'] == 'contact':
-                dispatcher.utter_message(text="Following are our active social media handles: \n1) [LinkedIn](https://www.linkedin.com/company/ieee-gst/)\n2) [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n3) [Instagram](https://www.instagram.com/ieeesiesgst/)\n4) [Facebook](https://www.facebook.com/ieeesiesgstofficial/).")
+                dispatcher.utter_message(text="Following are our active social media handles: \n1) [LinkedIn](https://www.linkedin.com/company/ieee-gst/)\n2) [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n3) [Instagram](https://www.instagram.com/ieeesiesgst/)\n4) [Facebook](https://www.facebook.com/ieeesiesgstofficial/). \nFor more info [Contact Us](https://ieeesiesgst.co.in/contact.html)")
                 spoken = True
             if result['entity'] == 'social_links':
                 if social.lower() in sociallinks:

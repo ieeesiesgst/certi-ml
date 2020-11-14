@@ -25,7 +25,6 @@ nlu:
 
 - intent: goodbye
   examples: |
-    - good afternoon
     - cu
     - good by
     - cee you later
@@ -40,6 +39,9 @@ nlu:
     - thanku for the help!
     - c u
     - tata
+    - will meet soon
+    - see you tomorrow
+    - okay b-bye
 
 
 - intent: affirm
@@ -385,8 +387,7 @@ nlu:
     - what are the certification [courses](courses) you offer?
     - is there any last date to complete the course?
     - tell me about this courses provided by ieee siesgst
-    - what can you do for me?
-    - how can you help me
+
 
 - intent: did_not_help
   examples: |
@@ -505,3 +506,34 @@ nlu:
     - what is the procedure to be a part of ieee?
     - what is the eligibility criteria for joinning ieee
     - when is the interview for ieee council selection?
+
+- intent: location
+  examples: |
+    - where are you situated?
+    - where is your office?
+    - where do you live?
+    - your home address
+    - your office address
+    - where can i find you?
+    - where are you located
+    - what is your location?
+    - can you give me your address
+    - provide me your address
+
+- intent: help_me
+  examples: |
+    - what can you do for me?
+    - how can you help me
+    - what can you do
+    - what else can you do
+    - how can you help me
+    - i need help
+    - what you can do?
+    - i have a question
+    - i have a qtn
+    - i want to ask something
+    - i need to ask you something
+    - can you help me?
+    - show me what you can do
+    - what is this chatbot capable of?
+    - what can iBot do?

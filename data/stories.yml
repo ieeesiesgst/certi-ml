@@ -204,3 +204,13 @@ stories:
   steps:
   - intent: membership
   - action: utter_membership
+
+- story: location info
+  steps: 
+  - intent: location
+  - action: utter_location
+
+- story: need help
+  steps:
+  - intent: help_me
+  - action: utter_help_me

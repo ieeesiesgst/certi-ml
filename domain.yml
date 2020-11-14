@@ -21,6 +21,8 @@ intents:
 - about_events
 - council
 - membership
+- location
+- help_me
 
 entities:
 - courses
@@ -150,6 +152,13 @@ responses:
   utter_membership:
   - text: "IEEE SIESGST organises membership drive at-least once a year. Keep an eye on our social media handles and stay up-to-date with all that is happenning at IEEE SIESGST."
   - text: "To be a part of IEEE SIESGST, show your presence in the Interview conducted usually after our grand fest: [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html)."
+
+  utter_location:
+  - text: "Find us [here](https://bit.ly/36xjDI9)"
+    image: "https://bit.ly/2H0VpNH"
+
+  utter_help_me:
+  - text: "Ask me anything regarding IEEE SIESGST, our new Certi Platform, how to enroll, how to contact us, what events we conduct, about membership and much more. \nDive now to explore the hidden capabilities of iBot 😀"
 
 actions:
 - action_course_information

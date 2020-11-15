@@ -144,7 +144,7 @@ responses:
 
   utter_join_us:
   - text: "IEEE SIESGST organises membership drive at-least once a year. Keep an eye on our social media handles and stay up-to-date with all that is happenning at IEEE SIESGST."
-  - text: "To be a part of IEEE SIESGST, show your presence in the Interview conducted usually after our grand fest: [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html)."
+  - text: "Interview for the IEEE SIESGST Council is usually after our grand fest [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html) towards the year end."
 
   utter_location:
   - text: "Find us [here](https://bit.ly/36xjDI9)"

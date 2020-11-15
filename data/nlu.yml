@@ -194,6 +194,33 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - you're not helping me
+    - you are bad
+    - you're very bad
+    - you're really bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're bad
+    - you're awful
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are very bad
+    - you are waste
+    - you're a bad
+    - you're not a good
+    - you're not very good
+    - you're terrible
+    - you're the worst
+    - you're the worst ever
+    - you're worthless
 
 
 - intent: bot_challenge
@@ -287,91 +314,6 @@ nlu:
     - where will i get my payment receipts
     - any payment?
 
-# - intent: smalltalk_confirmation_yes
-#   examples: |
-#     - that's correct
-#     - it's fine
-#     - go ahead
-#     - sounds good
-#     - okay
-#     - yes
-#     - ok
-#     - okie dokie
-#     - sure
-#     - go for it
-#     - yeah
-#     - yea
-#     - do it
-#     - of course
-#     - I guess
-#     - correct
-#     - yeah sure
-#     - why not
-#     - please do
-#     - sure is
-#     - I agree
-#     - I don't mind
-#     - certainly
-#     - exactly
-#     - yes I agree
-#     - I think so
-#     - yes it is
-#     - right
-#     - okay then
-#     - yes of course
-#     - yes I do
-#     - that s okay
-#     - I do
-#     - yup
-#     - ya
-#     - oh yes
-#     - yes sure
-#     - obviously
-#     - k
-#     - sure why not
-#     - yeah right
-#     - yeah of course
-#     - absolutely
-#     - yes indeed
-#     - ok sure
-#     - ok yes
-#     - yes correct
-#     - ok thank you
-#     - sure thing
-#     - ye
-#     - confirm
-#     - yep
-#     - looks good
-#     - yes thank you
-#     - definitely
-#     - yes right
-#     - yes I would like to
-#     - alrighty
-#     - yes definitely
-#     - yeh
-#     - yes it is correct
-#     - yeah that's right
-#     - ok you can
-#     - yap
-#     - yes you may
-#     - confirmed
-#     - of course why not
-#     - yes that's fine
-#     - affirmative
-#     - yeah go ahead
-#     - yeah I'm sure
-#     - okay sounds good
-#     - okay that's fine
-#     - yeah exactly
-#     - that is ok
-#     - this is correct
-#     - ok go ahead
-#     - yes this is correct
-#     - nevermind its okay
-#     - okey
-#     - yes for sure
-#     - all right
-
 
 - intent: about_course
   examples: |
@@ -384,40 +326,13 @@ nlu:
     - Can you tell me about [machine learning](courses)
     - what will i learn from [cloud computing](courses)
     - give me information on [cyber security](courses)
+    - tell me about [ml](courses)
     - what are the certification [courses](courses) you offer?
     - is there any last date to complete the course?
     - tell me about this courses provided by ieee siesgst
 
 
-- intent: did_not_help
-  examples: |
-    - you're not helping me
-    - you are bad
-    - you're very bad
-    - you're really bad
-    - you are useless
-    - you are horrible
-    - you are a waste of time
-    - you are disgusting
-    - you are lame
-    - you are no good
-    - you're bad
-    - you're awful
-    - you are not cool
-    - you are not good
-    - you are so bad
-    - you are so useless
-    - you are terrible
-    - you are totally useless
-    - you are very bad
-    - you are waste
-    - you're a bad
-    - you're not a good
-    - you're not very good
-    - you're terrible
-    - you're the worst
-    - you're the worst ever
-    - you're worthless
+
 
 - intent: contact_info
   examples: |

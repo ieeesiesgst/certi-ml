@@ -25,7 +25,6 @@ nlu:
 
 - intent: goodbye
   examples: |
-    - good afternoon
     - cu
     - good by
     - cee you later
@@ -39,6 +38,10 @@ nlu:
     - okay then byee
     - thanku for the help!
     - c u
+    - tata
+    - will meet soon
+    - see you tomorrow
+    - okay b-bye
 
 
 - intent: affirm
@@ -384,8 +387,7 @@ nlu:
     - what are the certification [courses](courses) you offer?
     - is there any last date to complete the course?
     - tell me about this courses provided by ieee siesgst
-    - what can you do for me?
-    - how can you help me
+
 
 - intent: did_not_help
   examples: |
@@ -420,6 +422,8 @@ nlu:
 - intent: contact_info
   examples: |
     - i want to take a guest lecture, who should i [contact](contact)?
+    - how to [contact](contact)
+    - i want to [contact](contact)
     - procedure for [colaboration](contact)
     - how to [colab](contact)?
     - what are your [social media handles](social_links)
@@ -464,4 +468,72 @@ nlu:
     - my dashboard details?
     - status of courses that i have enrolled
     - where i will find my details
-    - where can i find my course update
+    - how can i check my course progress?
+    - i want to track my progress
+    - what is the progress of my course?
+
+- intent: council
+  examples: |
+    - who are your council members?
+    - tell me this year's council members
+    - team members of ieee siesgst
+    - who is behind ieee siesgst
+    - this team consists of?
+    - ieee team
+    - ieee council
+    - ieee council members
+    - ieee team members
+    - tell me names behind ieee siesgst
+    - who is working for ieee?
+    - ieee siesgst is run by?
+    - who is chairperson of ieee?
+    - who is cp of ieee?
+    - who is vice-chairperson of ieee?
+    - who is vcp of ieee?
+    - who is technical head of ieee?
+    - who is secretary of ieee?
+
+- intent: membership
+  examples: |
+    - how to get membership
+    - how to get into ieee siesgst
+    - how to get into ieee?
+    - how can i be part of ieee
+    - i want to be a part of ieee siesgst
+    - can i join ieee
+    - how to join ieee
+    - process to get into ieee
+    - what is the procedure to be a part of ieee?
+    - what is the eligibility criteria for joinning ieee
+    - when is the interview for ieee council selection?
+
+- intent: location
+  examples: |
+    - where are you situated?
+    - where is your office?
+    - where do you live?
+    - your home address
+    - your office address
+    - where can i find you?
+    - where are you located
+    - what is your location?
+    - can you give me your address
+    - provide me your address
+
+- intent: help_me
+  examples: |
+    - what can you do for me?
+    - how can you help me
+    - what can you do
+    - what else can you do
+    - how can you help me
+    - i need help
+    - what you can do?
+    - i have a question
+    - i have a qtn
+    - i want to ask something
+    - i need to ask you something
+    - can you help me?
+    - show me what you can do
+    - what is this chatbot capable of?
+    - what can iBot do?

@@ -188,9 +188,29 @@ stories:
 - story: about the events
   steps:
   - intent: about_events
-  - action: utter_about_website
+  - action: utter_event_info
 
 - story: user course progress
   steps:
   - intent: my_progress
   - action: utter_progress_status
+
+- story: council members
+  steps:
+  - intent: council
+  - action: utter_council
+
+- story: membership details
+  steps:
+  - intent: membership
+  - action: utter_membership
+
+- story: location info
+  steps: 
+  - intent: location
+  - action: utter_location
+
+- story: need help
+  steps:
+  - intent: help_me
+  - action: utter_help_me

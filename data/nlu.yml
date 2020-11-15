@@ -408,7 +408,7 @@ nlu:
     - who is technical head of ieee?
     - who is secretary of ieee?
 
-- intent: membership
+- intent: join_us
   examples: |
     - how to get membership
     - how to get into ieee siesgst

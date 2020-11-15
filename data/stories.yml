@@ -203,10 +203,10 @@ stories:
   - intent: council
   - action: utter_council
 
-- story: membership details
+- story: membership and interview details
   steps:
-  - intent: membership
-  - action: utter_membership
+  - intent: join_us
+  - action: utter_join_us
 
 - story: location info
   steps: 

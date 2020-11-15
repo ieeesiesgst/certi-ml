@@ -18,7 +18,7 @@ intents:
 - my_progress
 - about_events
 - council
-- membership
+- join_us
 - location
 - help_me
 
@@ -142,7 +142,7 @@ responses:
   utter_council:
   - text: "Click [IEEE SIESGST COUNCIL](https://ieeesiesgst.co.in/team.html) to view our council members."
 
-  utter_membership:
+  utter_join_us:
   - text: "IEEE SIESGST organises membership drive at-least once a year. Keep an eye on our social media handles and stay up-to-date with all that is happenning at IEEE SIESGST."
   - text: "To be a part of IEEE SIESGST, show your presence in the Interview conducted usually after our grand fest: [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html)."
 

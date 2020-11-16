@@ -257,7 +257,69 @@ nlu:
     - talk some stuff about yourself
     - tell me some stuff about you
     - talk about yourself
+    - what is your name?
+    - what do people call u
+    - ppl call u by?
+    - your name is?
+    - are you iBot
+    - what shal i call you?
+    - you'd liked to be called?
 
+- intent: bot_creaters
+  examples: |
+    - who created u
+    - who is your creator?
+    - who made you?
+    - who is your developer?
+    - By what means were you made?
+    - By what method were you fashioned?
+    - Can you explain how you were created?
+    - Can you give me an idea as to how you were created?
+    - Can you say how you were constructed?
+    - Do you know how you were built?
+    - Do you know how you were made?
+    - How did they build you?
+    - How did they create you?
+    - How did they make you?
+    - How did you come into being?
+    - How did you come to be?
+    - How exactly were you devised?
+    - How exactly were you made?
+    - How were you built?
+    - How were you conceived?
+    - How were you constructed?
+    - How were you devised?
+    - How were you formed?
+    - How were you made into who you are?
+    - How were you made?
+    - How were you materialized?
+    - How were you set up?
+    - I want to know how you were formed
+    - I'd like to know how you were created
+    - I'd like to know how you were put together?
+    - In what manner were you built?
+    - In what manner were you constructed?
+    - In what manner were you formed?
+    - In what way were you created?
+    - In what way were you formed?
+    - In what way were you made?
+    - In what way were you shaped?
+    - In which manner were you devised?
+    - Let me know how you were made exactly
+    - Specify how you were created?
+    - Tell me how you were made?
+    - What process was used to build you?
+    - What process was used to create you?
+    - What was the process for making you?
+    - You originated through what means?
+    - how have you been built?
+    - how were you made?
+    - in what way were you made?
+    - so how were you made?
+    - what are you made of
+    - Are you built using rasa?
+    - Are u developed in rasa
+    - are you build with rasa ?
 
 - intent: about_ieee
   examples: |
@@ -360,6 +422,7 @@ nlu:
     - i want to [contact](contact)
     - procedure for [colaboration](contact)
     - how to [colab](contact)?
+    - how can i [contact](contact) u
     - what are your [social media handles](social_links)
     - provide me [social media links](social_links)
     - what are your [social accounts](social_links) available?
@@ -471,3 +534,13 @@ nlu:
     - show me what you can do
     - what is this chatbot capable of?
     - what can iBot do?
+
+- intent: email_id
+  examples: |
+    - ieee siesgst email-id
+    - give me your mail id
+    - what is the email address of ieee
+    - tell me the mailid of ieee
+    - i want to email ieee
+    - what is your email add
+    - do you know the email of iee siesgst?

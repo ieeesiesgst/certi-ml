@@ -17,19 +17,19 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_goodbye  
+  - action: utter_cheer_up  #changed
   - action: action_listen  
 
-- story: sad path 3 
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy  
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye  
-  - action: action_listen  
+# - story: sad path 3 
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy  
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye  
+#   - action: action_listen  
 
 
 - story: about all
@@ -217,3 +217,13 @@ stories:
   steps:
   - intent: help_me
   - action: utter_help_me
+
+- story: email id
+  steps:
+  - intent: email_id
+  - action: utter_email_id
+
+- story: bot creaters
+  steps:
+  - intent: bot_creaters
+  - action: utter_bot_creaters

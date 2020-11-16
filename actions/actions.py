@@ -51,7 +51,7 @@ sociallinks = {
     "insta": "Click [here](https://www.instagram.com/ieeesiesgst/) to visit our Instagram Page.",
     "facebook": "Click [here](https://www.facebook.com/ieeesiesgstofficial/) to visit our Facebook Page.",
     "fb": "Click [here](https://www.facebook.com/ieeesiesgstofficial/) to visit our Facebook Page.",
-    "youtube": "Click [here](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw) to visit our YouTube channel.",
+    "youtube": "Click [here](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw) to visit our YouTube channel."
 }
 
 

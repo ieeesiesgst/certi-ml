@@ -21,6 +21,8 @@ intents:
 - join_us
 - location
 - help_me
+- email_id
+- bot_creaters
 
 entities:
 - courses
@@ -61,7 +63,7 @@ responses:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
   - text: "I can be trained to be more useful. My developer will keep training me.\nTill then keep peace out!"
-  - text: "I must be missing some knowledge. I'll have my developer look into this.\nTill then keep peace out!"
+  - text: "I must be missing some knowledge. I'll have my developer look into this.\nTill then keep exploring!"
   - text: "I can improve with continuous feedback. My training is ongoing.\nTill then keep peace out!"
   
   utter_did_that_help:
@@ -96,6 +98,17 @@ responses:
   - text: "Well, I'm not a human, I'm a virtual agent for IEEE SIESGST."
   - text: "Think of me as a virtual agent for IEEE SIESGST."
   - text: "I'm a virtual agent for IEEE SIESGST."
+  - text: "I would like you to call me iBot."
+  - text: "iBot is my name."
+  - text: "Myself iBot"
+  - text: "People often call me iBot."
+
+  utter_bot_creaters:
+  - text: "I was created by dexterous engineers with lots of love and patience."
+  - text: "I was built with lots of love and patience."
+  - text: "They always ask how I was built, but never how I am..."
+  - text: "I was made by passionate engineers, but hard work is what built me."
+  - text: "I'm building myself every day. I've been working out daily...😸"
 
   utter_about_ieee:
   - text: "IEEE is the oldest Student body of SIES GST. It is an active body in organising\
@@ -152,6 +165,10 @@ responses:
 
   utter_help_me:
   - text: "Ask me anything regarding IEEE SIESGST, our new Certi Platform, how to enroll, how to contact us, what events we conduct, about membership and much more. \nDive now to explore the hidden capabilities of iBot 😀"
+
+  utter_email_id:
+  - text: "You can mail your queries at ieee@siesgst.ac.in "
+  - text: "Please feel free to drop an email at ieee@siesgst.ac.in "
 
 actions:
 - action_course_information

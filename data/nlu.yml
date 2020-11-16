@@ -5,6 +5,7 @@ nlu:
 - intent: greet
   examples: |
     - hey
+    - hey bot
     - hello
     - hi
     - hello there
@@ -264,6 +265,14 @@ nlu:
     - are you iBot
     - what shal i call you?
     - you'd liked to be called?
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - you robo
+    - you sound like a real human
+    - wow you sound like real human
 
 - intent: bot_creaters
   examples: |
@@ -493,6 +502,7 @@ nlu:
 - intent: join_us
   examples: |
     - how to get membership
+    - is there any membership for ieee?
     - how to get into ieee siesgst
     - how to get into ieee?
     - how can i be part of ieee

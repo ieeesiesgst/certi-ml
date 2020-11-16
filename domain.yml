@@ -51,13 +51,13 @@ responses:
       \ developed by IEEE SIESGST.\nTo get started try asking some of these: "
     buttons:
     - title: "What is this program about?"
-      payload: "/about_program"
+      payload: "What is this program about?"
     - title: "What are the courses offered?"
-      payload: "about courses"
-    - title: "About certificates"
-      payload: "/certification"    
-    - title: "Cost of enrollment!"
-      payload: "/cost"
+      payload: "What are the courses offered?"
+    - title: "Will I receive certificate on course completion?"
+      payload: "Will I receive certificate on course completion?"    
+    - title: "What is the cost of enrollment?"
+      payload: "What is the cost of enrollment?"
   
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
@@ -85,7 +85,7 @@ responses:
   - text: "Hope you liked our service!\nHappy Learning :-)"
 
   utter_goodbye:
-  - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
+  - text: "Enjoyed chatting with you..\nHope you liked our service!\nHappy Learning :-)"
   - text: "Hope you liked our service!\nHappy Learning :-)"
   - text: "Byee!\nSee you."
   - text: "See you soon!"
@@ -116,8 +116,6 @@ responses:
       \ saw a growth like never before within participation for most of it's events\
       \ having increased by leaps and bounds.\nReach out to us: \
       \ - [Our Website](https://ieeesiesgst.co.in/)"
-      # \n - [Linkedin](https://www.linkedin.com/company/ieee-gst/)\n - [Instagram](https://www.instagram.com/ieeesiesgst/)\n\
-      # \ - [Youtube](https://www.youtube.com/channel/UCXAeBcDQQBiuVtzn4ke-Xsw)\n - [Facebook](https://www.facebook.com/ieeesiesgstofficial/)"
   
   utter_about_program:
   - text: "It is an initiative taken by IEEE SIESGST to provide some of the most beneficial
@@ -129,8 +127,8 @@ responses:
     Just register and start learning!!!"
   
   utter_certification:
-  - text: "All the courses are certified. You will receive your certificate once you have 
-    successfully complete a course."
+  - text: "Since all the courses are certified, you will receive your certificate once you have 
+    successfully completed a course."
 
   utter_please_rephrase:
   - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"

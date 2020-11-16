@@ -17,19 +17,8 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_cheer_up  #changed
+  - action: utter_cheer_up
   - action: action_listen  
-
-# - story: sad path 3 
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_unhappy  
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye  
-#   - action: action_listen  
 
 
 - story: about all
@@ -55,6 +44,9 @@ stories:
 # - story: about ieee
 #   steps:
 #   - intent: about_ieee
+#     entities:
+#       - ieee
+#       - sub_chapters
 #   - action: action_about_ieee
 
 # - story: about program

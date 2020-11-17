@@ -1,5 +1,6 @@
-version: "2.0"
-
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
 - greet
 - goodbye
@@ -23,157 +24,137 @@ intents:
 - help_me
 - email_id
 - bot_creaters
-
+- nlu_fallback
 entities:
 - courses
 - ieee
 - sub_chapters
 - social_links
 - contact
-
 slots:
   courses:
     type: text
     influence_conversation: true
-
-  sub_chapters:
-    type: text
-    influence_conversation: true
-
   social_links:
     type: text
     influence_conversation: true
-
-
+  sub_chapters:
+    type: text
+    influence_conversation: true
 responses:
   utter_greet:
-  - text: "Hi there..👋 You can call me iBot \nI am here to assist you with the new Certi Platform\
-      \ developed by IEEE SIESGST.\nTo get started try asking some of these: "
-    buttons:
-    - title: "What is this program about?"
-      payload: "What is this program about?"
-    - title: "What are the courses offered?"
-      payload: "What are the courses offered?"
-    - title: "Will I receive certificate on course completion?"
-      payload: "Will I receive certificate on course completion?"    
-    - title: "What is the cost of enrollment?"
-      payload: "What is the cost of enrollment?"
-  
+  - buttons:
+    - payload: What is this program about?
+      title: What is this program about?
+    - payload: What are the courses offered?
+      title: What are the courses offered?
+    - payload: Will I receive certificate on course completion?
+      title: Will I receive certificate on course completion?
+    - payload: What is the cost of enrollment?
+      title: What is the cost of enrollment?
+    text: "Hi there..\U0001F44B You can call me iBot \nI am here to assist you with\
+      \ the new Certi Platform developed by IEEE SIESGST.\nTo get started try asking\
+      \ some of these: "
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
-  - text: "I can be trained to be more useful. My developer will keep training me.\nTill then keep peace out!"
-  - text: "I must be missing some knowledge. I'll have my developer look into this.\nTill then keep exploring!"
-  - text: "I can improve with continuous feedback. My training is ongoing.\nTill then keep peace out!"
-  
+  - text: "I can be trained to be more useful. My developer will keep training me.\n\
+      Till then keep peace out!"
+  - text: "I must be missing some knowledge. I'll have my developer look into this.\n\
+      Till then keep exploring!"
+  - text: "I can improve with continuous feedback. My training is ongoing.\nTill then\
+      \ keep peace out!"
   utter_did_that_help:
-  - text: "Did that help you?"
-  
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-  - text: "Nice!"
-  - text: "Yeah.."
-  - text: "Yess"
-  - text: "All right!"
-  - text: "Cool!"
-  - text: "Awesome"
-  - text: "Great!"
-  - text: "Good!"
-  
+  - text: Great, carry on!
+  - text: Nice!
+  - text: Yeah..
+  - text: Yess
+  - text: All right!
+  - text: Cool!
+  - text: Awesome
+  - text: Great!
+  - text: Good!
   utter_thanks:
   - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
   - text: "Hope you liked our service!\nHappy Learning :-)"
-
   utter_goodbye:
-  - text: "Enjoyed chatting with you..\nHope you liked our service!\nHappy Learning :-)"
+  - text: "Enjoyed chatting with you..\nHope you liked our service!\nHappy Learning\
+      \ :-)"
   - text: "Hope you liked our service!\nHappy Learning :-)"
   - text: "Byee!\nSee you."
-  - text: "See you soon!"
-  - text: "Bye-bye!"
-  - text: "Till next time!"
-  
+  - text: See you soon!
+  - text: Bye-bye!
+  - text: Till next time!
   utter_iamabot:
-  - text: "I'm an IEEE SIESGST conversational bot."
-  - text: "I'm a virtual assistant for IEEE SIESGST, not a real person."
-  - text: "Well, I'm not a human, I'm a virtual agent for IEEE SIESGST."
-  - text: "Think of me as a virtual agent for IEEE SIESGST."
-  - text: "I'm a virtual agent for IEEE SIESGST."
-  - text: "I would like you to call me iBot."
-  - text: "iBot is my name."
-  - text: "Myself iBot"
-  - text: "People often call me iBot."
-
+  - text: I'm an IEEE SIESGST conversational bot.
+  - text: I'm a virtual assistant for IEEE SIESGST, not a real person.
+  - text: Well, I'm not a human, I'm a virtual agent for IEEE SIESGST.
+  - text: Think of me as a virtual agent for IEEE SIESGST.
+  - text: I'm a virtual agent for IEEE SIESGST.
+  - text: I would like you to call me iBot.
+  - text: iBot is my name.
+  - text: Myself iBot
+  - text: People often call me iBot.
   utter_bot_creaters:
-  - text: "I was created by dexterous engineers with lots of love and patience."
-  - text: "I was built with lots of love and patience."
-  - text: "They always ask how I was built, but never how I am..."
-  - text: "I was made by passionate engineers, but hard work is what built me."
-  - text: "I'm building myself every day. I've been working out daily...😸"
-
+  - text: I was created by dexterous engineers with lots of love and patience.
+  - text: I was built with lots of love and patience.
+  - text: They always ask how I was built, but never how I am...
+  - text: I was made by passionate engineers, but hard work is what built me.
+  - text: I'm building myself every day. I've been working out daily...😸
   utter_about_ieee:
   - text: "IEEE is the oldest Student body of SIES GST. It is an active body in organising\
       \ all extra-curricular activities in the college. This acedamic year, IEEE SIESGST\
       \ saw a growth like never before within participation for most of it's events\
-      \ having increased by leaps and bounds.\nReach out to us: \
-      \ - [Our Website](https://ieeesiesgst.co.in/)"
-  
+      \ having increased by leaps and bounds.\nReach out to us:  - [Our Website](https://ieeesiesgst.co.in/)"
   utter_about_program:
-  - text: "It is an initiative taken by IEEE SIESGST to provide some of the most beneficial
-    and trending technical courses in this platform to help you upskill with latest
-    technologies."
-
+  - text: It is an initiative taken by IEEE SIESGST to provide some of the most beneficial
+      and trending technical courses in this platform to help you upskill with latest
+      technologies.
   utter_cost:
-  - text: "All the courses will be free of cost because we strongly beleive in learning skills that matter. 
-    Just register and start learning!!!"
-  
+  - text: All the courses will be free of cost because we strongly beleive in learning
+      skills that matter. Just register and start learning!!!
   utter_certification:
-  - text: "Since all the courses are certified, you will receive your certificate once you have 
-    successfully completed a course."
-
+  - text: Since all the courses are certified, you will receive your certificate once
+      you have successfully completed a course.
   utter_please_rephrase:
-  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
-
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_default:
-  - text: "Sorry I didn't get that. Can you rephrase?"
-
+  - text: Sorry I didn't get that. Can you rephrase?
   utter_ask_rephrase:
-  - text: "I'm sorry, I didn't quite understand that. Could you rephrase?"
-
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
   utter_about_website:
-  - text: "Click [here](https://ieeesiesgst.co.in/) to visit our website."
-  - text: "Here is our [website](https://ieeesiesgst.co.in/)"
-  - text: "Please visit our [website](https://ieeesiesgst.co.in/) for more info."
-
+  - text: Click [here](https://ieeesiesgst.co.in/) to visit our website.
+  - text: Here is our [website](https://ieeesiesgst.co.in/)
+  - text: Please visit our [website](https://ieeesiesgst.co.in/) for more info.
   utter_event_info:
-  - text: "We are actively conducting various events throught the year!\nFollow us on our social media handles to get updates!\nTill then checkout our grand annual fest [Techopedia 20k9](https://ieeesiesgst.co.in/techopedia/index.html)"
-
+  - text: "We are actively conducting various events throught the year!\nFollow us\
+      \ on our social media handles to get updates!\nTill then checkout our grand\
+      \ annual fest [Techopedia 20k9](https://ieeesiesgst.co.in/techopedia/index.html)"
   utter_progress_status:
-  - text: "You can find an option to view your profile wherein you can see your enrollments and usage history."
-
+  - text: You can find an option to view your profile wherein you can see your enrollments
+      and usage history.
   utter_council:
-  - text: "Click [IEEE SIESGST COUNCIL](https://ieeesiesgst.co.in/team.html) to view our council members."
-
+  - text: Click [IEEE SIESGST COUNCIL](https://ieeesiesgst.co.in/team.html) to view
+      our council members.
   utter_join_us:
-  - text: "IEEE SIESGST organises membership drive at-least once a year. Keep an eye on our social media handles and stay up-to-date with all that is happenning at IEEE SIESGST."
-  - text: "Interview for the IEEE SIESGST Council is usually after our grand fest [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html) towards the year end."
-
+  - text: IEEE SIESGST organises membership drive at-least once a year. Keep an eye
+      on our social media handles and stay up-to-date with all that is happenning
+      at IEEE SIESGST.
+  - text: Interview for the IEEE SIESGST Council is usually after our grand fest [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html)
+      towards the year end.
   utter_location:
-  - text: "Find us [here](https://bit.ly/36xjDI9)"
-    image: "https://bit.ly/2H0VpNH"
-
+  - image: https://bit.ly/2H0VpNH
+    text: Find us [here](https://bit.ly/36xjDI9)
   utter_help_me:
-  - text: "Ask me anything regarding IEEE SIESGST, our new Certi Platform, how to enroll, how to contact us, what events we conduct, about membership and much more. \nDive now to explore the hidden capabilities of iBot 😀"
-
+  - text: "Ask me anything regarding IEEE SIESGST, our new Certi Platform, how to\
+      \ enroll, how to contact us, what events we conduct, about membership and much\
+      \ more. \nDive now to explore the hidden capabilities of iBot \U0001F600"
   utter_email_id:
-  - text: "You can mail your queries at ieee@siesgst.ac.in "
-  - text: "Please feel free to drop an email at ieee@siesgst.ac.in "
-
+  - text: 'You can mail your queries at ieee@siesgst.ac.in '
+  - text: 'Please feel free to drop an email at ieee@siesgst.ac.in '
 actions:
 - action_course_information
 - action_about_ieee
 - action_contact_info
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
-

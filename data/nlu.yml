@@ -1,7 +1,5 @@
 version: "2.0"
-
 nlu:
-
 - intent: greet
   examples: |
     - hey
@@ -25,8 +23,16 @@ nlu:
     - greetings
     - howdy
     - long time no see
-
-
+    - bol bhai
+    - Hi
+    - Hello
+    - Hey
+    - Hii
+    - Heyy
+    - holaa
+    - whatsupp
+    - Ssupp
+    - Heyyyy
 - intent: goodbye
   examples: |
     - cu
@@ -46,8 +52,14 @@ nlu:
     - will meet soon
     - see you tomorrow
     - okay b-bye
-
-
+    - byee
+    - theek hai bhai seeh lenge
+    - Chalo byee
+    - Bye
+    - Noo byeee
+    - yea byee
+    - yes byee
+    - okay byee
 - intent: affirm
   examples: |
     - yes
@@ -66,18 +78,11 @@ nlu:
     - it's fine
     - go ahead
     - sounds good
-    - okay
-    - yes
-    - ok
     - okie dokie
     - sure
     - go for it
-    - yeah
-    - yea
     - do it
-    - of course
     - I guess
-    - correct
     - yeah sure
     - why not
     - please do
@@ -100,7 +105,6 @@ nlu:
     - oh yes
     - yes sure
     - obviously
-    - k
     - sure why not
     - yeah right
     - yeah of course
@@ -147,8 +151,25 @@ nlu:
     - got it
     - fine
     - fair enough
-
-
+    - ha kya
+    - quite obvious man
+    - Okay
+    - Yes
+    - That's gud
+    - Ok
+    - 😂😂😂
+    - Thank you ibot
+    - Ofcourse it did
+    - ooh thats cool
+    - Yo
+    - Thanks !
+    - Cool
+    - okay ill do
+    - yess
+    - okay thanks ill see
+    - cool
+    - ohh thanks
+    - Okayyyy
 - intent: deny
   examples: |
     - no
@@ -161,9 +182,8 @@ nlu:
     - nope
     - naah
     - no need
-
-
-
+    - No
+    - noo
 - intent: mood_great
   examples: |
     - perfect
@@ -180,8 +200,12 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
-
+    - Wow
+    - That's  nice
+    - Great
+    - thats great
+    - ohh great
+    - nice
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -225,8 +249,6 @@ nlu:
     - you're the worst
     - you're the worst ever
     - you're worthless
-
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -242,7 +264,6 @@ nlu:
     - are you a robot
     - are you a program
     - you're a robot?
-    - who are you?
     - all about you
     - what is your personality
     - define yourself
@@ -273,7 +294,12 @@ nlu:
     - you robo
     - you sound like a real human
     - wow you sound like real human
-
+    - How are you
+    - What are you doing
+    - What is your name?!
+    - How you doing
+    - Wat is your name?
+    - What is your name?
 - intent: bot_creaters
   examples: |
     - who created u
@@ -329,7 +355,7 @@ nlu:
     - Are you built using rasa?
     - Are u developed in rasa
     - are you build with rasa ?
-
+    - Who created you
 - intent: about_ieee
   examples: |
     - what is [ieee](ieee)?
@@ -352,9 +378,18 @@ nlu:
     - about [computer society](sub_chapters)
     - more info about [cs](sub_chapters)
     - what is [mtt-s](sub_chapters)
-
-
-    
+    - [Subchapters](sub_chapters)
+    - What is the meaning of [ieee](ieee)
+    - What is ieee full form
+    - What is [ieee](ieee)
+    - can u tell me about [ieee](ieee)!
+    - but exactly what is [ieee](ieee)?
+    - what are the different [subchapters](sub_chapters)?
+    - what [ie](ieee) [WIE](sub_chapters)?
+    - tell me about [wie](sub_chapters)
+    - can u tell me about the [subchapters](sub_chapters)!!
+    - what is [WIE](sub_chapters)
+    - can you tell me about [ieee](ieee)?
 - intent: about_program
   examples: |
     - what is this platform for
@@ -372,9 +407,12 @@ nlu:
     - what is this website about?
     - this website is used for?
     - what does this webpage offer
-    - tell me about this program started by ieee siesgst 
-
-
+    - tell me about this program started by ieee siesgst
+    - Ye page kya hai
+    - Tell me more about this platform
+    - What is this about ?
+    - What is the program about
+    - tell me more about this program
 - intent: certification
   examples: |
     - what about the certificate?
@@ -387,9 +425,12 @@ nlu:
     - is there any eligibility for receiving certificates?
     - certificates?
     - tell me about certis
-    - tell me about this certification provided by ieee siesgst 
-
-
+    - tell me about this certification provided by ieee siesgst
+    - Certification
+    - When do i receive certificate
+    - About certificate
+    - Will I get certi?
+    - Certificate
 - intent: cost
   examples: |
     - what is the cost of a course
@@ -403,8 +444,10 @@ nlu:
     - do i need to pay for this program
     - where will i get my payment receipts
     - any payment?
-
-
+    - Cost
+    - Price
+    - Do I have to pay?
+    - Cost ?
 - intent: about_course
   examples: |
     - can you tell me about the [courses](courses) available?
@@ -420,10 +463,19 @@ nlu:
     - what are the certification [courses](courses) you offer?
     - is there any last date to complete the course?
     - tell me about this courses provided by ieee siesgst
-
-
-
-
+    - [Cloud computing](courses)
+    - about [courses](courses)
+    - [ML](courses)
+    - Please name some of the [courses](courses) I can enroll from?
+    - [Courses](courses)
+    - What are the [courses](courses) offered?
+    - Tell me about [cyber security](courses)
+    - tell me about the [courses](courses)?
+    - tell me about [cloud computing](courses)
+    - yes.. tell me about [cloud computing](courses)
+    - can you tell me about [Machine LEarning](courses)
+    - what are the [courses](courses)?
+    - tell me more about your [courses](courses)
 - intent: contact_info
   examples: |
     - i want to take a guest lecture, who should i [contact](contact)?
@@ -448,7 +500,11 @@ nlu:
     - ieee [linkedin](social_links)
     - ieee [fb](social_links)
     - ieee [facebook](social_links)
-
+    - Can you provide me the [links](social_links) of your [social media](social_links) handle
+    - [Contact](contact) u where?
+    - how can i [contach](contact) iee?
+    - but how can i [contact](contact) you
+    - How can I [contact](contact) the course mentor
 - intent: about_website
   examples: |
     - i want to know about your website
@@ -457,7 +513,6 @@ nlu:
     - your website link
     - can you show me ieee siesgst webpage
     - i want to know more about this website
-
 - intent: about_events
   examples: |
     - what all events do you conduct at ieee siesgst
@@ -466,8 +521,6 @@ nlu:
     - what are your annual functions
     - how can i participate in your events?
     - what is techopedia
-
-
 - intent: my_progress
   examples: |
     - my profile status
@@ -477,7 +530,6 @@ nlu:
     - how can i check my course progress?
     - i want to track my progress
     - what is the progress of my course?
-
 - intent: council
   examples: |
     - who are your council members?
@@ -498,7 +550,7 @@ nlu:
     - who is vcp of ieee?
     - who is technical head of ieee?
     - who is secretary of ieee?
-
+    - how can i reach ieee team?
 - intent: join_us
   examples: |
     - how to get membership
@@ -513,7 +565,6 @@ nlu:
     - what is the procedure to be a part of ieee?
     - what is the eligibility criteria for joinning ieee
     - when is the interview for ieee council selection?
-
 - intent: location
   examples: |
     - where are you situated?
@@ -526,14 +577,17 @@ nlu:
     - what is your location?
     - can you give me your address
     - provide me your address
-
+    - tera ghar kaha hai?
+    - I'm from bhandup.. from where are you
+    - Your location pls
+    - where is ieee siesgst situated?
+    - what is your location
 - intent: help_me
   examples: |
     - what can you do for me?
     - how can you help me
     - what can you do
     - what else can you do
-    - how can you help me
     - i need help
     - what you can do?
     - i have a question
@@ -544,7 +598,11 @@ nlu:
     - show me what you can do
     - what is this chatbot capable of?
     - what can iBot do?
-
+    - What you doing
+    - Aur batao
+    - What can you do
+    - It did not help me
+    - What else can you do
 - intent: email_id
   examples: |
     - ieee siesgst email-id
@@ -554,3 +612,13 @@ nlu:
     - i want to email ieee
     - what is your email add
     - do you know the email of iee siesgst?
+    - What is the email of [ieee siesgst](ieee)
+    - email address
+    - email id
+- intent: ieee_fullform
+  examples: |
+    - Ieee full form
+- intent: membership
+  examples: |
+    - What's ieee membership
+    - how can i get membership?

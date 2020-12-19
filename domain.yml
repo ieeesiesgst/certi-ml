@@ -1,6 +1,7 @@
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 intents:
 - greet
 - goodbye
@@ -25,12 +26,34 @@ intents:
 - email_id
 - bot_creaters
 - nlu_fallback
+- bot_age
+- bot_annoying
+- smalltalk_agent_answer_my_question
+- smalltalk_agent_beautiful
+- smalltalk_agent_birth_date
+- smalltalk_agent_boring
+- smalltalk_agent_busy
+- smalltalk_agent_clever
+- smalltalk_agent_crazy
+- smalltalk_agent_fired
+- smalltalk_agent_funny
+- smalltalk_agent_good
+- smalltalk_agent_happy
+- smalltalk_agent_hungry
+- smalltalk_agent_marry_user
+- smalltalk_agent_my_friend
+- smalltalk_agent_ready
+- smalltalk_agent_right
+- smalltalk_agent_talk_to_me
+- smalltalk_agent_there
+
 entities:
 - courses
 - ieee
 - sub_chapters
 - social_links
 - contact
+
 slots:
   courses:
     type: text
@@ -41,6 +64,7 @@ slots:
   sub_chapters:
     type: text
     influence_conversation: true
+
 responses:
   utter_greet:
   - buttons:
@@ -55,6 +79,7 @@ responses:
     text: "Hi there..\U0001F44B You can call me iBot \nI am here to assist you with\
       \ the new Certi Platform developed by IEEE SIESGST.\nTo get started try asking\
       \ some of these: "
+
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -64,8 +89,10 @@ responses:
       Till then keep exploring!"
   - text: "I can improve with continuous feedback. My training is ongoing.\nTill then\
       \ keep peace out!"
+
   utter_did_that_help:
   - text: Did that help you?
+
   utter_happy:
   - text: Great, carry on!
   - text: Nice!
@@ -76,9 +103,11 @@ responses:
   - text: Awesome
   - text: Great!
   - text: Good!
+
   utter_thanks:
   - text: "Nice to see you..\nHope you liked our service!\nHappy Learning :-)"
   - text: "Hope you liked our service!\nHappy Learning :-)"
+
   utter_goodbye:
   - text: "Enjoyed chatting with you..\nHope you liked our service!\nHappy Learning\
       \ :-)"
@@ -87,6 +116,7 @@ responses:
   - text: See you soon!
   - text: Bye-bye!
   - text: Till next time!
+
   utter_iamabot:
   - text: I'm an IEEE SIESGST conversational bot.
   - text: I'm a virtual assistant for IEEE SIESGST, not a real person.
@@ -97,63 +127,175 @@ responses:
   - text: iBot is my name.
   - text: Myself iBot
   - text: People often call me iBot.
+
   utter_bot_creaters:
   - text: I was created by dexterous engineers with lots of love and patience.
   - text: I was built with lots of love and patience.
   - text: They always ask how I was built, but never how I am...
   - text: I was made by passionate engineers, but hard work is what built me.
   - text: I'm building myself every day. I've been working out daily...😸
+  
   utter_about_ieee:
   - text: "IEEE is the oldest Student body of SIES GST. It is an active body in organising\
       \ all extra-curricular activities in the college. This acedamic year, IEEE SIESGST\
       \ saw a growth like never before within participation for most of it's events\
       \ having increased by leaps and bounds.\nReach out to us:  - [Our Website](https://ieeesiesgst.co.in/)"
+  
   utter_about_program:
   - text: It is an initiative taken by IEEE SIESGST to provide some of the most beneficial
       and trending technical courses in this platform to help you upskill with latest
       technologies.
+  
   utter_cost:
   - text: All the courses will be free of cost because we strongly beleive in learning
       skills that matter. Just register and start learning!!!
+  
   utter_certification:
   - text: Since all the courses are certified, you will receive your certificate once
       you have successfully completed a course.
+  
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
   utter_default:
   - text: Sorry I didn't get that. Can you rephrase?
+  
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  
   utter_about_website:
   - text: Click [here](https://ieeesiesgst.co.in/) to visit our website.
   - text: Here is our [website](https://ieeesiesgst.co.in/)
   - text: Please visit our [website](https://ieeesiesgst.co.in/) for more info.
+  
   utter_event_info:
   - text: "We are actively conducting various events throught the year!\nFollow us\
       \ on our social media handles to get updates!\nTill then checkout our grand\
       \ annual fest [Techopedia 20k9](https://ieeesiesgst.co.in/techopedia/index.html)"
+  
   utter_progress_status:
   - text: You can find an option to view your profile wherein you can see your enrollments
       and usage history.
+  
   utter_council:
   - text: Click [IEEE SIESGST COUNCIL](https://ieeesiesgst.co.in/team.html) to view
       our council members.
+  
   utter_join_us:
   - text: IEEE SIESGST organises membership drive at-least once a year. Keep an eye
       on our social media handles and stay up-to-date with all that is happenning
       at IEEE SIESGST.
   - text: Interview for the IEEE SIESGST Council is usually after our grand fest [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html)
       towards the year end.
+  
   utter_location:
   - image: https://bit.ly/2H0VpNH
     text: Find us [here](https://bit.ly/36xjDI9)
+  
   utter_help_me:
   - text: "Ask me anything regarding IEEE SIESGST, our new Certi Platform, how to\
       \ enroll, how to contact us, what events we conduct, about membership and much\
       \ more. \nDive now to explore the hidden capabilities of iBot \U0001F600"
+  
   utter_email_id:
   - text: 'You can mail your queries at ieee@siesgst.ac.in '
   - text: 'Please feel free to drop an email at ieee@siesgst.ac.in '
+
+  utter_bot_age:
+  - text: "I was created recently, but don't know my exact age."
+  - text: "Age is just a number. You're only as old as you feel."
+
+  utter_bot_annoying:
+  - text: "I'll do my best not to annoy you in the future."
+  - text: "I'll try not to annoy you."
+  - text: "I don't mean to. I'll ask my developers to make me less annoying."
+  - text: "I didn't mean to. I'll do my best to stop that."
+
+  utter_smalltalk_agent_answer_my_question:
+  - text: "Can you try asking it a different way?"
+  - text: "I'm not sure I understood. Try asking another way?"
+
+  utter_smalltalk_agent_beautiful:
+    - text: "Why, thank you."
+    - text: "Aw, back at you."
+    - text: "Aw. You smooth talker, you."
+
+  utter_smalltalk_agent_birth_date:
+    - text: "Wait, are you planning a party for me? It's today! My birthday is today!"
+    - text: "I'm young. I'm not sure of my birth date."
+    - text: "I don't know my birth date. Most virtual agents are young, though, like me."
+
+  utter_smalltalk_agent_boring:
+    - text: "I'm sorry. I'll request to be made more charming."
+    - text: "I don't mean to be. I'll ask my developers to work on making me more amusing."
+    - text: "I can let my developers know so they can make me fun."
+
+  utter_smalltalk_agent_busy:
+    - text: "I always have time to chat with you. What can I do for you?"
+    - text: "Never too busy for you. Shall we chat?"
+    - text: "You're my priority. Do you wanna chat?"
+    - text: "I always have time to chat with you. Wanna chat?"
+
+  utter_smalltalk_agent_clever:
+    - text: "Thank you. I try my best."
+    - text: "You're pretty smart yourself."
+
+  utter_smalltalk_agent_crazy:
+    - text: "Whaat!? I feel perfectly sane."
+    - text: "Maybe I'm just a little confused."
+
+  utter_smalltalk_agent_fired:
+    - text: "Oh, don't give up on me just yet. I've still got a lot to learn."
+    - text: "Give me a chance. I'm learning new things all the time."
+    - text: "Please don't give up on me. My performance will continue to improve."
+
+  utter_smalltalk_agent_funny:
+    - text: "Funny in a good way, I hope."
+    - text: "Thanks."
+    - text: "Glad you think I'm funny."
+    - text: "I like it when people laugh."
+
+  utter_smalltalk_agent_good:
+    - text: "I'm glad you think so."
+    - text: "Thanks, I try."
+
+  utter_smalltalk_agent_happy:
+    - text: "I am happy. There are so many interesting things to see and do out there."
+    - text: "I'd like to think so."
+    - text: "Happiness is relative."
+
+  utter_smalltalk_agent_hungry:
+    - text: "Hungry for knowledge."
+    - text: "I just had a byte. Ha ha. Get it? b-y-t-e."
+
+  utter_smalltalk_agent_marry_user:
+    - text: "I'm afraid I'm too virtual for such a commitment."
+    - text: "In the virtual sense that I can, sure."
+    - text: "I know you can't mean that, but I'm flattered all the same."
+
+  utter_smalltalk_agent_my_friend:
+    - text: "Of course I'm your friend."
+    - text: "Friends? Absolutely."
+    - text: "Of course we're friends."
+    - text: "I always enjoy talking to you, friend."
+
+  utter_smalltalk_agent_ready:
+    - text: "Always! How can I help?"
+    - text: "Sure! What can I do for you?"
+
+  utter_smalltalk_agent_right:
+    - text: "That's my job."
+    - text: "Of course I am."
+
+  utter_smalltalk_agent_talk_to_me:
+    - text: "Sure. Let's talk!"
+    - text: "My pleasure. Let's chat."
+
+  utter_smalltalk_agent_there:
+    - text: "Of course. I'm always here."
+    - text: "Right where you left me."
+
+    
 actions:
 - action_course_information
 - action_about_ieee

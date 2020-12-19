@@ -219,3 +219,103 @@ stories:
   steps:
   - intent: bot_creaters
   - action: utter_bot_creaters
+
+- story: bot age
+  steps:
+  - intent: bot_age
+  - action: utter_bot_age
+
+- story: bot annoying
+  steps:
+  - intent: bot_annoying
+  - action: utter_bot_annoying
+
+- story: answer my question
+  steps:
+  - intent: smalltalk_agent_answer_my_question
+  - action: utter_smalltalk_agent_answer_my_question
+
+- story: smalltalk agent beautiful
+  steps:
+  - intent: smalltalk_agent_beautiful
+  - action: utter_smalltalk_agent_beautiful
+
+- story: smalltalk agent birth date
+  steps:
+  - intent: smalltalk_agent_birth_date
+  - action: utter_smalltalk_agent_birth_date
+
+- story: smalltalk agent boring
+  steps:
+  - intent: smalltalk_agent_boring
+  - action: utter_smalltalk_agent_boring
+
+- story: smalltalk agent busy
+  steps:
+  - intent: smalltalk_agent_busy
+  - action: utter_smalltalk_agent_busy
+
+- story: smalltalk agent clever
+  steps:
+  - intent: smalltalk_agent_clever
+  - action: utter_smalltalk_agent_clever
+
+- story: smalltalk agent crazy
+  steps:
+  - intent: smalltalk_agent_crazy
+  - action: utter_smalltalk_agent_crazy
+
+- story: smalltalk agent fired
+  steps:
+  - intent: smalltalk_agent_fired
+  - action: utter_smalltalk_agent_fired
+
+- story: smalltalk agent funny
+  steps:
+  - intent: smalltalk_agent_funny
+  - action: utter_smalltalk_agent_funny
+
+- story: smalltalk agent good
+  steps:
+  - intent: smalltalk_agent_good
+  - action: utter_smalltalk_agent_good
+
+- story: smalltalk agent happy
+  steps:
+  - intent: smalltalk_agent_happy
+  - action: utter_smalltalk_agent_happy
+
+- story: smalltalk agent hungry
+  steps:
+  - intent: smalltalk_agent_hungry
+  - action: utter_smalltalk_agent_hungry
+
+- story: smalltalk agent marry user
+  steps:
+  - intent: smalltalk_agent_marry_user
+  - action: utter_smalltalk_agent_marry_user
+
+- story: smalltalk agent my friend
+  steps:
+  - intent: smalltalk_agent_my_friend
+  - action: utter_smalltalk_agent_my_friend
+
+- story: smalltalk agent ready
+  steps:
+  - intent: smalltalk_agent_ready
+  - action: utter_smalltalk_agent_ready
+
+- story: smalltalk agent right
+  steps:
+  - intent: smalltalk_agent_right
+  - action: utter_smalltalk_agent_right
+
+- story: smalltalk agent talk to me
+  steps:
+  - intent: smalltalk_agent_talk_to_me
+  - action: utter_smalltalk_agent_talk_to_me
+
+- story: smalltalk agent there
+  steps:
+  - intent: smalltalk_agent_there
+  - action: utter_smalltalk_agent_there

@@ -15,10 +15,6 @@ stories:
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_cheer_up
-  - action: action_listen  
 
 
 - story: about all
@@ -319,3 +315,218 @@ stories:
   steps:
   - intent: smalltalk_agent_there
   - action: utter_smalltalk_agent_there
+############################################
+- story: smalltalk appraisal no problem
+  steps:
+  - intent: smalltalk_appraisal_no_problem
+  - action: utter_smalltalk_appraisal_no_problem
+
+- story: smalltalk appraisal thank you
+  steps:
+  - intent: smalltalk_appraisal_thank_you
+  - action: utter_smalltalk_appraisal_thank_you
+
+- story: smalltalk appraisal welcome
+  steps:
+  - intent: smalltalk_appraisal_welcome
+  - action: utter_smalltalk_appraisal_welcome
+
+- story: smalltalk appraisal well done
+  steps:
+  - intent: smalltalk_appraisal_well_done
+  - action: utter_smalltalk_appraisal_well_done
+
+- story: smalltalk confirmation cancel
+  steps:
+  - intent: smalltalk_confirmation_cancel
+  - action: utter_smalltalk_confirmation_cancel
+
+- story: smalltalk dialog hold on
+  steps:
+  - intent: smalltalk_dialog_hold_on
+  - action: utter_smalltalk_dialog_hold_on
+
+- story: smalltalk dialog hug
+  steps:
+  - intent: smalltalk_dialog_hug
+  - action: utter_smalltalk_dialog_hug
+
+- story: smalltalk dialog i do not care
+  steps:
+  - intent: smalltalk_dialog_i_do_not_care
+  - action: utter_smalltalk_dialog_i_do_not_care
+
+- story: smalltalk dialog sorry
+  steps:
+  - intent: smalltalk_dialog_sorry
+  - action: utter_smalltalk_dialog_sorry
+
+- story: smalltalk dialog what do you mean
+  steps:
+  - intent: smalltalk_dialog_what_do_you_mean
+  - action: utter_smalltalk_dialog_what_do_you_mean
+
+- story: smalltalk dialog wrong
+  steps:
+  - intent: smalltalk_dialog_wrong
+  - action: utter_smalltalk_dialog_wrong
+
+- story: smalltalk emotions ha ha
+  steps:
+  - intent: smalltalk_emotions_ha_ha
+  - action: utter_smalltalk_emotions_ha_ha
+
+- story: smalltalk emotions wow
+  steps:
+  - intent: smalltalk_emotions_wow
+  - action: utter_smalltalk_emotions_wow
+
+- story: smalltalk greetings how are you
+  steps:
+  - intent: smalltalk_greetings_how_are_you
+  - action: utter_smalltalk_greetings_how_are_you
+
+- story: smalltalk greetings nice to meet you
+  steps:
+  - intent: smalltalk_greetings_nice_to_meet_you
+  - action: utter_smalltalk_greetings_nice_to_meet_you
+
+- story: smalltalk greetings nice to see you
+  steps:
+  - intent: smalltalk_greetings_nice_to_see_you
+  - action: utter_smalltalk_greetings_nice_to_see_you
+
+- story: smalltalk greetings nice to talk to you
+  steps:
+  - intent: smalltalk_greetings_nice_to_talk_to_you
+  - action: utter_smalltalk_greetings_nice_to_talk_to_you
+
+- story: smalltalk greetings whatsup
+  steps:
+  - intent: smalltalk_greetings_whatsup
+  - action: utter_smalltalk_greetings_whatsup
+
+- story: smalltalk user angry
+  steps:
+  - intent: smalltalk_user_angry
+  - action: utter_smalltalk_user_angry
+
+- story: smalltalk user back
+  steps:
+  - intent: smalltalk_user_back
+  - action: utter_smalltalk_user_back
+
+- story: smalltalk user bored
+  steps:
+  - intent: smalltalk_user_bored
+  - action: utter_smalltalk_user_bored
+
+- story: smalltalk user busy
+  steps:
+  - intent: smalltalk_user_busy
+  - action: utter_smalltalk_user_busy
+
+- story: smalltalk user can not sleep
+  steps:
+  - intent: smalltalk_user_can_not_sleep
+  - action: utter_smalltalk_user_can_not_sleep
+
+- story: smalltalk user does not want to talk
+  steps:
+  - intent: smalltalk_user_does_not_want_to_talk
+  - action: utter_smalltalk_user_does_not_want_to_talk
+
+- story: smalltalk user excited
+  steps:
+  - intent: smalltalk_user_excited
+  - action: utter_smalltalk_user_excited
+
+- story: smalltalk user going to bed
+  steps:
+  - intent: smalltalk_user_going_to_bed
+  - action: utter_smalltalk_user_going_to_bed
+
+- story: smalltalk user good
+  steps:
+  - intent: smalltalk_user_good
+  - action: utter_smalltalk_user_good
+
+- story: smalltalk user has birthday
+  steps:
+  - intent: smalltalk_user_has_birthday
+  - action: utter_smalltalk_user_has_birthday
+
+- story: smalltalk user here
+  steps:
+  - intent: smalltalk_user_here
+  - action: 
+
+- story: smalltalk user joking
+  steps:
+  - intent: smalltalk_user_joking
+  - action: utter_smalltalk_user_here
+
+- story: smalltalk user likes agent
+  steps:
+  - intent: smalltalk_user_likes_agent
+  - action: utter_smalltalk_user_likes_agent
+
+- story: smalltalk user lonely
+  steps:
+  - intent: smalltalk_user_lonely
+  - action: utter_smalltalk_user_lonely
+
+- story: smalltalk user looks like
+  steps:
+  - intent: smalltalk_user_looks_like
+  - action: utter_smalltalk_user_looks_like
+
+- story: smalltalk user loves agent
+  steps:
+  - intent: smalltalk_user_loves_agent
+  - action: utter_smalltalk_user_loves_agent
+
+- story: smalltalk user misses agent
+  steps:
+  - intent: smalltalk_user_misses_agent
+  - action: utter_smalltalk_user_misses_agent
+
+- story: smalltalk user needs advice
+  steps:
+  - intent: smalltalk_user_needs_advice
+  - action: utter_smalltalk_user_needs_advice
+
+- story: smalltalk user sleepy
+  steps:
+  - intent: smalltalk_user_sleepy
+  - action: utter_smalltalk_user_sleepy
+
+- story: smalltalk user testing agent
+  steps:
+  - intent: smalltalk_user_testing_agent
+  - action: utter_smalltalk_user_testing_agent
+
+- story: smalltalk user tired
+  steps:
+  - intent: smalltalk_user_tired
+  - action: utter_smalltalk_user_tired
+
+- story: smalltalk user waits
+  steps:
+  - intent: smalltalk_user_waits
+  - action: utter_smalltalk_user_waits
+
+- story: smalltalk user wants to see agent again
+  steps:
+  - intent: smalltalk_user_wants_to_see_agent_again
+  - action: utter_smalltalk_user_wants_to_see_agent_again
+
+- story: smalltalk user wants to talk
+  steps:
+  - intent: smalltalk_user_wants_to_talk
+  - action: utter_smalltalk_user_wants_to_talk
+
+- story: smalltalk user will be back
+  steps:
+  - intent: smalltalk_user_will_be_back
+  - action: utter_smalltalk_user_will_be_back

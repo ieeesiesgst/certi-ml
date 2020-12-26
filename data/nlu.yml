@@ -1,4 +1,5 @@
 version: "2.0"
+
 nlu:
 - intent: greet
   examples: |
@@ -31,6 +32,7 @@ nlu:
     - Heyy
     - holaa
     - Heyyyy
+    - hiee
 
 - intent: goodbye
   examples: |
@@ -615,6 +617,7 @@ nlu:
     - what is [ieee](ieee)?
     - what is [ieee siesgst](ieee)?
     - tell me about [ieee sies gst](ieee)
+    - tell me something about [ieee](ieee)
     - about [ieee](ieee)
     - about [ieee siesgst](ieee)
     - give some info about [ieee siesgst](ieee)
@@ -673,6 +676,7 @@ nlu:
   examples: |
     - what about the certificate?
     - will i receive any certificate?
+    - Will I receive certificate on course completion?
     - is certificate provided?
     - certi?
     - how and when will i receive my certificates?
@@ -687,6 +691,8 @@ nlu:
     - About certificate
     - Will I get certi?
     - Certificate
+    - what about the certificate?
+    - are these courses certified?
 
 - intent: cost
   examples: |
@@ -829,6 +835,7 @@ nlu:
     - what is the procedure to be a part of ieee?
     - what is the eligibility criteria for joinning ieee
     - when is the interview for ieee council selection?
+    - how to be a part of ieee council
 
 - intent: location
   examples: |
@@ -915,11 +922,8 @@ nlu:
 - intent: ieee_fullform
   examples: |
     - Ieee full form
-
-- intent: membership
-  examples: |
-    - What's ieee membership
-    - how can i get membership?
+    - what is the full form of ieee
+    - expand ieee
 
 - intent: bot_age
   examples: |
@@ -1349,7 +1353,7 @@ nlu:
     - you are here
     - you still there
     - are you still here
-########################################
+
 - intent: smalltalk_appraisal_no_problem
   examples: |
     - no worries

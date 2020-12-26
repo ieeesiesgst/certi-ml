@@ -1,3 +1,5 @@
+version: "2.0"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -24,6 +26,7 @@ intents:
 - location
 - help_me
 - email_id
+- ieee_fullform
 - bot_creaters
 - nlu_fallback
 - bot_age
@@ -46,7 +49,6 @@ intents:
 - smalltalk_agent_right
 - smalltalk_agent_talk_to_me
 - smalltalk_agent_there
-###################################
 - smalltalk_appraisal_no_problem
 - smalltalk_appraisal_thank_you
 - smalltalk_appraisal_welcome
@@ -226,11 +228,10 @@ responses:
       our council members.
   
   utter_join_us:
-  - text: IEEE SIESGST organises membership drive at-least once a year. Keep an eye
-      on our social media handles and stay up-to-date with all that is happenning
-      at IEEE SIESGST.
-  - text: Interview for the IEEE SIESGST Council is usually after our grand fest [Techopedia](https://ieeesiesgst.co.in/techopedia/index.html)
-      towards the year end.
+  - text: "IEEE SIESGST organises membership drive at-least once a year. Keep an eye\
+      \ on our social media handles and stay up-to-date with all that is happenning\
+      \ at IEEE SIESGST. \nYou can be a part of IEEE SIESGST Council after clearing the interview\
+      \ which usually occurs after our grand fest [Techopedia](https://ieeesiesgst.co.in/techopedia/) towards the year end."
   
   utter_location:
   - image: https://bit.ly/2H0VpNH
@@ -337,7 +338,7 @@ responses:
   utter_smalltalk_agent_there:
     - text: "Of course. I'm always here."
     - text: "Right where you left me."
-##################################################
+
   utter_smalltalk_appraisal_no_problem:
     - text: "Whew!"
     - text: "Alright, thanks!"
@@ -565,8 +566,6 @@ responses:
     - text: "All right. I'll be here whenever you need me."
 
 
-
-    
 actions:
 - action_course_information
 - action_about_ieee

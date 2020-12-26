@@ -2,59 +2,43 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: greetings
   steps:
   - intent: greet
   - action: utter_greet
+
+- story: mood great
+  steps:
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 2 
+- story: mood unhappy
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
 
-
-- story: about all
+- story: about ieee
   steps:
   - intent: about_ieee
     entities:
       - ieee
       - sub_chapters
   - action: action_about_ieee 
+
+- story: afirm
+  steps:
   - intent: affirm
   - action: utter_happy
+
+- story: about program
+  steps:
   - intent: about_program
   - action: utter_about_program
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+
+- story: certification
+  steps:
   - intent: certification
   - action: utter_certification
-  - intent: affirm
-  - action: utter_happy
-
-
-# - story: about ieee
-#   steps:
-#   - intent: about_ieee
-#     entities:
-#       - ieee
-#       - sub_chapters
-#   - action: action_about_ieee
-
-# - story: about program
-#   steps:
-#   - intent: about_program
-#   - action: utter_about_program
-
-# - story: certificates
-#   steps:
-#   - intent: certification
-#   - action: utter_certification
-
 
 - story: small talk confirmation yes
   steps:
@@ -315,7 +299,7 @@ stories:
   steps:
   - intent: smalltalk_agent_there
   - action: utter_smalltalk_agent_there
-############################################
+
 - story: smalltalk appraisal no problem
   steps:
   - intent: smalltalk_appraisal_no_problem
@@ -459,7 +443,7 @@ stories:
 - story: smalltalk user here
   steps:
   - intent: smalltalk_user_here
-  - action: 
+  - action: utter_smalltalk_user_here
 
 - story: smalltalk user joking
   steps:
